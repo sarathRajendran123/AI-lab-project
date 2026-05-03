@@ -1,6 +1,7 @@
 import argparse
 import json
 import re
+from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List
 
@@ -20,8 +21,7 @@ class ModelInterface:
                 stream=False,
                 options={
                     "temperature": 0.0,
-                    "num_predict": 2048,
-                    "stop": ["</critical_steps>"],
+                    "num_predict": 8192,
                 },
             )
             return response["response"]
@@ -60,12 +60,39 @@ def save_results(results: Dict[str, Any], output_path: str) -> None:
         json.dump(results, f, indent=2, ensure_ascii=False)
 
 
+def append_jsonl_record(record: Dict[str, Any], output_path: str) -> None:
+    with open(output_path, "a", encoding="utf-8") as f:
+        f.write(json.dumps(record, ensure_ascii=False) + "\n")
+
+
 def extract_last_tag_content(response_text: str, tag_name: str) -> str:
     pattern = rf"<{tag_name}>\s*(.*?)\s*</{tag_name}>"
     matches = re.findall(pattern, response_text, flags=re.DOTALL | re.IGNORECASE)
     if not matches:
         return ""
     return matches[-1].strip()
+
+
+def wrap_with_all_steps_tags(response_text: str) -> str:
+    opening_re = re.compile(r"<\s*all\s+steps\s*>", flags=re.IGNORECASE)
+    closing_re = re.compile(r"<\s*/\s*all\s+steps\s*>", flags=re.IGNORECASE)
+
+    has_opening = bool(opening_re.search(response_text))
+    has_closing = bool(closing_re.search(response_text))
+
+    if has_opening and has_closing:
+        return response_text
+
+    if has_opening and not has_closing:
+        # Add a closing tag at the end
+        return response_text + "\n</all steps>"
+
+    if has_closing and not has_opening:
+        # Add an opening tag at the beginning
+        return "<all steps>\n" + response_text
+
+    # Neither tag present: wrap the entire response
+    return f"<all steps>\n{response_text}\n</all steps>"
 
 
 def build_steps_context(question_data: Dict[str, Any]) -> str:
@@ -90,16 +117,14 @@ def build_steps_context(question_data: Dict[str, Any]) -> str:
 def create_structured_prompt(question_data: Dict[str, Any]) -> str:
     problem_text = str(question_data.get("problem", "")).strip()
     solution_text = str(question_data.get("solution", "")).strip()
-    steps_context = build_steps_context(question_data)
 
     return f"""You are a math expert and you are supposed to answer these putnam bench questions, to be more specific, you do have the solution already attached, however you now need to explain to your students how to reach that answer correctly, step by step carefully, with clear and good reasoning. Do not skip any critical steps that are necessary to reach the answer. A critical step is one that establishes a key fact, insight, or result that is necessary for the final solution, or performs a calculation etc. directly used in the final solution. Include answering the final solution as a critical step.
 
 The problem is in between <problem> and </problem> tags.
 
 Format your answer like this:
-All steps that are used for your reasoning or your calculation should be in: <all steps> and </all steps> tags.
 Each step should be in its own tags like <step-1>...</step-1>, <step-2>...</step-2> and so on, in the order you think about them. Do not skip any steps, and do not combine multiple steps into one. Each step should be a single insight, calculation, or logical deduction.
-It is extremely important to follow the format strictly, as we will be parsing your answer based on these tags. Do not add any extra tags or text outside of the specified format.
+It is extremely important to follow the format strictly, as we will be parsing your answer based on these tags.
 
 <problem>
 {problem_text}
@@ -143,73 +168,96 @@ It is extremely important to follow the format strictly, as we will be parsing y
 # {steps_context}
 # </all steps>"""
 
-def extract_answer(response_text: str) -> str:
-    critical_steps_text = extract_last_tag_content(response_text, "critical_steps")
-    if critical_steps_text:
-        return critical_steps_text
+# def extract_answer(response_text: str) -> str:
+#     critical_steps_text = extract_last_tag_content(response_text, "critical_steps")
+#     if critical_steps_text:
+#         return critical_steps_text
 
-    # No valid critical_steps tag found.
-    return ""
+#     # No valid critical_steps tag found.
+#     return ""
 
 
-def extract_critical_steps(response_text: str) -> List[int]:
-    last_value = extract_last_tag_content(response_text, "critical_steps")
-    if not last_value:
-        return []
+# def extract_critical_steps(response_text: str) -> List[int]:
+#     last_value = extract_last_tag_content(response_text, "critical_steps")
+#     if not last_value:
+#         return []
 
-    numbers = re.findall(r"\d+", last_value)
-    return [int(n) for n in numbers]
+#     numbers = re.findall(r"\d+", last_value)
+#     return [int(n) for n in numbers]
 
 
 def parse_models(model_names: List[str]) -> List[Dict[str, str]]:
     return [{"name": model_name.strip()} for model_name in model_names if model_name.strip()]
 
 
+def next_rollout_name(output_dir: str) -> str:
+    root = Path(output_dir)
+    if not root.exists():
+        return "rollout_1"
+
+    rollout_numbers = []
+    for child in root.iterdir():
+        if not child.is_dir():
+            continue
+        match = re.fullmatch(r"rollout_(\d+)", child.name)
+        if match:
+            rollout_numbers.append(int(match.group(1)))
+
+    if not rollout_numbers:
+        return "rollout_1"
+
+    return f"rollout_{max(rollout_numbers) + 1}"
+
+
+def rollout_output_path(output_dir: str, model_name: str, rollout_name: str) -> Path:
+    rollout_dir = Path(output_dir) / rollout_name
+    rollout_dir.mkdir(parents=True, exist_ok=True)
+    return rollout_dir / f"{model_name.replace(':', '_')}_results.jsonl"
+
+
 def run_experiment(dataset_path: str, models: List[Dict[str, str]], output_dir: str) -> None:
     dataset = load_dataset(dataset_path)
     Path(output_dir).mkdir(parents=True, exist_ok=True)
+    rollout_name = next_rollout_name(output_dir)
+    started_at = datetime.now().isoformat(timespec="seconds")
 
     for model_config in models:
         model_name = model_config["name"]
         print(f"Running experiment with model: {model_name}")
         model = ModelInterface(model_name)
 
-        responses: List[Dict[str, Any]] = []
+        output_path = rollout_output_path(output_dir, model_name, rollout_name)
         for i, q in enumerate(dataset):
             prompt = create_structured_prompt(q)
             response = model.generate(prompt)
-            answer = extract_answer(response)
-            critical_steps = extract_critical_steps(response)
+            print(f"Response length: {len(response)} chars")  # Check respone length to ensure it's not truncated
+            response = wrap_with_all_steps_tags(response)
+            # answer = extract_answer(response)
+            # critical_steps = extract_critical_steps(response)
 
-            responses.append(
-                {
-                    "id": q.get("id", f"question_{i}"),
-                    "prompt": prompt,
-                    "response": response,
-                    "answer": answer,
-                    "critical_steps": critical_steps,
-                    "solution": q.get("solution", None),
-                }
-            )
+            record = {
+                "model": model_name,
+                "dataset": dataset_path,
+                "rollout": rollout_name,
+                "started_at": started_at,
+                "id": q.get("id", f"question_{i}"),
+                "prompt": prompt,
+                "response": response,
+                "solution": q.get("solution", None),
+            }
+            append_jsonl_record(record, str(output_path))
 
-        output_path = str(Path(output_dir) / f"{model_name.replace(':', '_')}_results.json")
-        model_results = {
-            "model": model_name,
-            "dataset": dataset_path,
-            "responses": responses,
-        }
-        save_results(model_results, output_path)
         print(f"Results saved to {output_path}")
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run Putnam prompting experiments.")
-    parser.add_argument("--dataset", default="sample_dataset.json", help="Path to dataset file (.json/.yaml/.yml)")
+    parser.add_argument("--dataset", default="dataset.yaml", help="Path to dataset file (.json/.yaml/.yml)")
     parser.add_argument("--output-dir", default="experiment_results", help="Directory to save model outputs")
     parser.add_argument(
         "--models",
         nargs="+",
-        default=["qwen3-coder:30b", "gemma4:e4b"],
+        default=["gemma4:e4b"],
         help="One or more Ollama model names",
     )
 
