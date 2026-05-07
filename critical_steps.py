@@ -274,12 +274,12 @@ def run_experiment(dataset_path: str, models: List[Dict[str, str]], output_dir: 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run Putnam prompting experiments.")
-    parser.add_argument("--dataset", default="test.jsonl", help="Path to a prior-stage results file (.json/.jsonl/.yaml/.yml)")
+    parser.add_argument("--dataset", default="experiment_results/rollout_1/qwen3-coder_30b_results.jsonl", help="Path to a prior-stage results file (.json/.jsonl/.yaml/.yml)")
     parser.add_argument("--output-dir", default="critical_results", help="Directory to save model outputs")
     parser.add_argument(
         "--models",
         nargs="+",
-        default=["gemma4:e4b"],
+        default=["qwen3-coder:30b"],
         help="One or more Ollama model names",
     )
 
