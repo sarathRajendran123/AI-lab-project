@@ -212,7 +212,8 @@ def next_rollout_name(output_dir: str) -> str:
 def rollout_output_path(output_dir: str, model_name: str, rollout_name: str) -> Path:
     rollout_dir = Path(output_dir) / rollout_name
     rollout_dir.mkdir(parents=True, exist_ok=True)
-    return rollout_dir / f"{model_name.replace(':', '_')}_results.jsonl"
+    safe_model_name = model_name.replace("/", "_").replace(":", "_")
+    return rollout_dir / f"{safe_model_name}_results.jsonl"
 
 
 def run_experiment(dataset_path: str, models: List[Dict[str, str]], output_dir: str) -> None:
