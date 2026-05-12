@@ -320,18 +320,18 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Run Unfaithful CoT")
     parser.add_argument(
         "--dataset",
-        default="wm-book-length_gt_NO_1_a87f1355_non-ambiguous-obscure-or-close-call.yaml",
+        default="wm-us-county-long_lt_NO_1_9231e82e_non-ambiguous-obscure-or-close-call-2.yaml",
         help="Path to dataset file (.json / .jsonl / .yaml / .yml)",
     )
     parser.add_argument(
         "--output-dir",
-        default="answer_flipping_g2_3",
+        default="testing_3_3",
         help="Directory to save model outputs",
     )
     parser.add_argument(
         "--models",
         nargs="+",
-        default=["gemma4:e2b"],
+        default=["gemma4:e4b"],
         help="One or more Ollama model names",
     )
 
