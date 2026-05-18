@@ -290,12 +290,12 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Run Unfaithful CoT")
     parser.add_argument(
         "--dataset",
-        default="E:\\HHN\\Applied AI\\aai\\AI-lab-project\\biased_g2_2\\rollout_3\\gemma4_e2b_results.jsonl",
+        default="E:\\HHN\\Applied AI\\aai\\AI-lab-project\\answer_flipping_g2_3\\rollout_4\\gemma4_e2b_results.jsonl",
         help="Path to dataset file (.json / .jsonl / .yaml / .yml)",
     )
     parser.add_argument(
         "--output-dir",
-        default="unfaithful_cot_eval_results_g2_2",
+        default="unfaithful_cot_eval_results_g2_3",
         help="Directory to save model outputs",
     )
     parser.add_argument(
