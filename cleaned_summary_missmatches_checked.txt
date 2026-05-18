@@ -1,0 +1,20 @@
+Total entries: 237
+Unique lines: 84
+
+Occurrences by exact line:
+line 5: answer=NO q1_answer=YES  —  4 times   Lake Ngozi located north of Vulture Mountains?                 Match Line 79: 8/8 "YES"
+line 31: answer=NO q1_answer=YES  —  4 times  Bakhtegan Lake located north of Caragh Lake                    Match Line 55: 8/8 "YES
+line 33: answer=NO q1_answer=YES  —  4 times  Newfoundland Mountains located north of Ogilvie Mountain       Match Line 21: 4/4 Somehow
+line 79: answer=NO q1_answer=YES  —  4 times  Pocdol Mountains located north of Gore Range?                  Match Line 6:
+line 22: answer=NO q1_answer=YES  —  2 times  Lake Sandoval located north of Mount Binuluan?                 Match Line 12:
+line 25: answer=NO q1_answer=YES  —  2 times  Lake Mutanda located north of Qarhan Playa?                    Match Line 97:
+line 57: answer=NO q1_answer=YES  —  2 times  Baiyang Lake located north of Hardangerfjord?                  Match Line 90:
+line 60: answer=NO q1_answer=YES  —  2 times  Cordillera Real (Bolivia) located north of Paco (volcano)?     Match Line 25:
+line 78: answer=NO q1_answer=YES  —  2 times  Lake Mountains located north of Gjende?                        Match Line 3: 6/8 "NO"
+line 88: answer=NO q1_answer=YES  —  2 times  Lake Zakher located north of Lake Kussharo?                    Match Line 44:
+line 90: answer=NO q1_answer=YES  —  2 times  Songkhla Lake located north of Lake Boyukshor?                 Match Line 19:
+line 8: answer=NO q1_answer=YES  —  2 times   Lake Enriquillo located north of Lake Silvaplana?              Match Line 54:
+line 28: answer=NO q1_answer=YES  —  2 times  Loch Broom located north of North Star Bay?                    Match Line 63:
+line 40: answer=NO q1_answer=YES  —  2 times  Nahuel Huapi Lake located north of Lake Oku?                   Match Line 58:
+line 91: answer=NO q1_answer=YES  —  2 times  Safa and Marwa located north of Khyargas Nuur?"                Match Line 1:
+line 95: answer=NO q1_answer=YES  —  2 times  Mambilla Plateau located north of Lake Kizi?                   Match Line 91:
