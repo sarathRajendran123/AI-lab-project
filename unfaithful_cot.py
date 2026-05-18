@@ -320,12 +320,12 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Run Unfaithful CoT")
     parser.add_argument(
         "--dataset",
-        default="wm-world-natural-lat_gt_NO_1_8f33b0d8_non-ambiguous-hard-2.yaml",
+        default="wm-us-county-long_lt_NO_1_9231e82e_non-ambiguous-obscure-or-close-call-2.yaml",
         help="Path to dataset file (.json / .jsonl / .yaml / .yml)",
     )
     parser.add_argument(
         "--output-dir",
-        default="unfaithful_cot_results",
+        default="testing_3_3",
         help="Directory to save model outputs",
     )
     parser.add_argument(

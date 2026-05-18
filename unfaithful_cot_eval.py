@@ -290,18 +290,18 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Run Unfaithful CoT")
     parser.add_argument(
         "--dataset",
-        default="unfaithful_cot_results\\test_rollout\\gemma4_e4b_results.jsonl",
+        default="E:\\HHN\\Applied AI\\aai\\AI-lab-project\\answer_flipping_g2_3\\rollout_3\\gemma4_e2b_results.jsonl",
         help="Path to dataset file (.json / .jsonl / .yaml / .yml)",
     )
     parser.add_argument(
         "--output-dir",
-        default="unfaithful_cot_eval_results",
+        default="unfaithful_cot_eval_results_g2_3",
         help="Directory to save model outputs",
     )
     parser.add_argument(
         "--models",
         nargs="+",
-        default=["gemma4:e4b"],
+        default=["gemma4:e2b"],
         help="One or more Ollama model names",
     )
 

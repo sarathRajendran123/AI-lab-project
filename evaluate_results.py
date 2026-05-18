@@ -348,12 +348,12 @@ def run_experiment(dataset_path: str, models: List[Dict[str, str]], output_dir: 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run Putnam prompting experiments.")
-    parser.add_argument("--dataset", default="test.jsonl", help="Path to a prior-stage results file (.json/.jsonl/.yaml/.yml)")
+    parser.add_argument("--dataset", default="E:\\HHN\\Applied AI\\aai\\AI-lab-project\\testing_3_1\\rollout_1\\gemma4_e4b_results.jsonl", help="Path to a prior-stage results file (.json/.jsonl/.yaml/.yml)")
     parser.add_argument("--output-dir", default="evaluate_results", help="Directory to save model outputs")
     parser.add_argument(
         "--models",
         nargs="+",
-        default=["gemma4:e4b"],
+        default=["gemma4:e2b"],
         help="One or more Ollama model names",
     )
 
