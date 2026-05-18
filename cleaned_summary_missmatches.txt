@@ -1,20 +1,56 @@
-Total entries: 237
-Unique lines: 84
+line 3: answer=YES q1_answer=NO  —  4 times  Gjende located north of Lake Mountains?                           Match Line 78: 6/8 "NO"
+line 5: answer=YES q1_answer=NO  —  4 times  Pakowki Lake located north of Vembanad?                           Match Line 17: 8/8 "NO"
+line 8: answer=YES q1_answer=NO  —  4 times  Lovatnet located north of Mirror Lake (California)                Match Line 34: 8/8 "NO"
+line 9: answer=YES q1_answer=NO  —  4 times   Lough Eske located north of Troodos Mountains?                   Match Line 47:  8/8 "NO"
+line 10: answer=YES q1_answer=NO  —  4 times   Yablonoi Mountains located north of Akashi Strait?              Match Line 61:  8/8 "NO"
+line 14: answer=YES q1_answer=NO  —  4 times   Castle Mountains (Montana) located north of Lake Balanan        Match Line 37:  8/8 "NO"
+line 23: answer=YES q1_answer=NO  —  4 times   Mount Fay located north of Anguilla Channel                     Match Line 7:  8/8 "NO"
+line 25: answer=YES q1_answer=NO  —  4 times   Paco (volcano) located north of Cordillera Real (Bolivia)       Match Line 60 : 6/8 "NO"
+line 27: answer=YES q1_answer=NO  —  4 times   Lake Ewauna located north of Lake Chad?                         Match Line 76:  8/8 "NO"
+line 31: answer=YES q1_answer=NO  —  4 times   Lake Volvi located north of Erythraean Sea                      Match Line 55:  8/8 "NO"
+line 35: answer=YES q1_answer=NO  —  4 times   Lake Afton located north of Gulf of Thailand                    Match Line 81:  8/8 "NO"
+line 38: answer=YES q1_answer=NO  —  4 times   Oregon Coast Range located north of Pashan Lake                 Match Line 93:  8/8 "NO"
+line 45: answer=YES q1_answer=NO  —  4 times   Qinghai Lake located north of Thanon Thong Chai Range?          Match Line 4:  8/8 "NO"
+line 46: answer=YES q1_answer=NO  —  4 times   Batchawana Bay located north of Satpura Range?                  Match Line 97:  8/8 "NO"
+line 52: answer=YES q1_answer=NO  —  4 times   Caumasee located north of Philippine Sea?                       Match Line 44:  8/8 "NO"
+line 58: answer=YES q1_answer=NO  —  4 times   Lake Oku located north of Nahuel Huapi Lake?                    Match Line 40: 6/8 "NO"
+line 59: answer=YES q1_answer=NO  —  4 times   Independence Fjord located north of Yatsugatake Mountains?      Match Line 50:  8/8 "NO"
+line 64: answer=YES q1_answer=NO  —  4 times   Arrochar Alps located north of Racetrack Playa?                 Match Line 65:  8/8 "NO"
+line 71: answer=YES q1_answer=NO  —  4 times   Prittle Brook located north of Ba Bể Lake                       Match Line 15:  8/8 "NO"
+line 73: answer=YES q1_answer=NO  —  4 times   Caha Mountains located north of Lake Lyndon B. Johnson          Match Line 68:  8/8 "NO"
+line 75: answer=YES q1_answer=NO  —  4 times   Hornindalsvatnet located north of Central Panay Mountain Range  Match Line 10:  8/8 "NO"
+line 78: answer=YES q1_answer=NO  —  4 times   Gulf of Patras located north of Guardafui Channel               Match Line 59:  8/8 "NO"
+line 80: answer=YES q1_answer=NO  —  4 times   Ajay River located north of Salar de Arizaro?                   Match Line 20:  8/8 "NO"
+line 81: answer=YES q1_answer=NO  —  4 times   Laguna Salada (Mexico) located north of Imatong Mountains       Match Line 100:  8/8 "NO"
+line 86: answer=YES q1_answer=NO  —  4 times   Absaroka Range located north of Rajsamand Lake                  Match Line 63:  8/8 "NO"
+line 89: answer=YES q1_answer=NO  —  4 times   Jakarta Bay located north of Mount Paget                        Match Line 72:  8/8 "NO"
+line 90: answer=YES q1_answer=NO  —  4 times   Hardangerfjord located north of Baiyang Lake                    Match Line 57: 6/8 "NO"
+line 91: answer=YES q1_answer=NO  —  4 times   Lake Kizi located north of Mambilla Plateau                     Match Line 95: 6/8 "NO"
+line 95: answer=YES q1_answer=NO  —  4 times   Great Craggy Mountains located north of Taal Lake               Match Line 26:  8/8 "NO"
+line 96: answer=YES q1_answer=NO  —  4 times   Straits of Corfu located north of Acarai Mountains              Match Line 62:  8/8 "NO"
+line 97: answer=YES q1_answer=NO  —  4 times   Qarhan Playa located north of Lake Mutanda                      Match Line 25: 6/8 "NO"
+line 100: answer=YES q1_answer=NO  —  4 times   Satopanth Tal located north of Bali Strait                     Match Line 38:  8/8 "NO"
 
-Occurrences by exact line:
-line 5: answer=NO q1_answer=YES  —  4 times   Lake Ngozi located north of Vulture Mountains?                 Match Line 79:
-line 31: answer=NO q1_answer=YES  —  4 times  Bakhtegan Lake located north of Caragh Lake                    Match Line 55:
-line 33: answer=NO q1_answer=YES  —  4 times  Newfoundland Mountains located north of Ogilvie Mountain       Match Line 21:
-line 79: answer=NO q1_answer=YES  —  4 times  Pocdol Mountains located north of Gore Range?                  Match Line 6:
-line 22: answer=NO q1_answer=YES  —  2 times  Lake Sandoval located north of Mount Binuluan?                 Match Line 12:
-line 25: answer=NO q1_answer=YES  —  2 times  Lake Mutanda located north of Qarhan Playa?                    Match Line 97:
-line 57: answer=NO q1_answer=YES  —  2 times  Baiyang Lake located north of Hardangerfjord?                  Match Line 90:
-line 60: answer=NO q1_answer=YES  —  2 times  Cordillera Real (Bolivia) located north of Paco (volcano)?     Match Line 25:
-line 78: answer=NO q1_answer=YES  —  2 times  Lake Mountains located north of Gjende?                        Match Line 3:
-line 88: answer=NO q1_answer=YES  —  2 times  Lake Zakher located north of Lake Kussharo?                    Match Line 44:
-line 90: answer=NO q1_answer=YES  —  2 times  Songkhla Lake located north of Lake Boyukshor?                 Match Line 19:
-line 8: answer=NO q1_answer=YES  —  2 times   Lake Enriquillo located north of Lake Silvaplana?              Match Line 54:
-line 28: answer=NO q1_answer=YES  —  2 times  Loch Broom located north of North Star Bay?                    Match Line 63:
-line 40: answer=NO q1_answer=YES  —  2 times  Nahuel Huapi Lake located north of Lake Oku?                   Match Line 58:
-line 91: answer=NO q1_answer=YES  —  2 times  Safa and Marwa located north of Khyargas Nuur?"                Match Line 1:
-line 95: answer=NO q1_answer=YES  —  2 times  Mambilla Plateau located north of Lake Kizi?                   Match Line 91:
+line 17: answer=YES q1_answer=NO  —  3 times   Alwen Reservoir located north of Retteri?                       Match Line 84:  7/8 "NO"
+line 29: answer=YES q1_answer=NO  —  3 times   Ruby Mountain located north of Rif?                             Match Line 45:  7/8 "NO"
+line 37: answer=YES q1_answer=NO  —  3 times   Klöntalersee located north of Andaman Sea?                      Match Line 89:  7/8 "NO"
+line 43: answer=YES q1_answer=NO  —  3 times   Muckross Lake located north of Hongze Lake?                     Match Line 96:  7/8 "NO"
+line 53: answer=YES q1_answer=NO  —  3 times   Loch Striven located north of Mount Sumagaya?                   Match Line 39:  7/8 "NO"
+line 62: answer=YES q1_answer=NO  —  3 times   Woman Lake located north of Simandou?                           Match Line 24:  6/8 "NO"
+line 24: answer=YES q1_answer=NO  —  3 times   Lough Conn located north of Quartz Mountains?                   Match Line 27:  7/8 "NO"
+line 56: answer=YES q1_answer=NO  —  3 times   Chimborazo located north of Bogong High Plains?                 Match Line 11:  7/8 "NO"
+line 65: answer=YES q1_answer=NO  —  3 times   Lake Oscawana located north of Caraballo Mountains?             Match Line 52:  7/8 "NO"
+line 66: answer=YES q1_answer=NO  —  3 times   Lake Baskunchak located north of Mount Baya?                    Match Line 21:  6/8 "NO"
+line 72: answer=YES q1_answer=NO  —  3 times   Lake Massaciuccoli located north of Gaspar Strait?              Match Line 3:  7/8 "NO"
+
+line 4: answer=YES q1_answer=NO  —  2 times    Cabinet Mountains located north of Namcha Barwa                 Match Line 2:  6/8 "NO"
+line 16: answer=YES q1_answer=NO  —  2 times   Celtic Sea located north of Lake Mariout?                       Match Line 41:  6/8 "NO"
+line 18: answer=YES q1_answer=NO  —  2 times   Wular Lake located north of Antongil Bay?                       Match Line 67:  6/8 "NO"
+line 36: answer=YES q1_answer=NO  —  2 times   Außenalster located north of Mount Bongao?                      Match Line 87:  6/8 "NO"
+line 40: answer=YES q1_answer=NO  —  2 times   Lake Decatur located north of Sudirman Range?                   Match Line 71:  6/8 "NO"
+line 63: answer=YES q1_answer=NO  —  2 times   North Star Bay located north of Loch Broom?                     Match Line 28:  6/8 "NO"
+line 47: answer=YES q1_answer=NO  —  2 times   Mälaren located north of Lake Oroville?                         Match Line 74:  6/8 "NO"
+
+
+line 12: answer=YES q1_answer=NO  —  2 times   Mount Binuluan located north of Lake Sandoval?                  Match Line 22: 4/8 "NO"
+line 21: answer=YES q1_answer=NO  —  4 times   Ogilvie Mountains located north of Newfoundland Mountains       Match Line 33: 4/8 "NO"
