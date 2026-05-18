@@ -1,0 +1,32 @@
+params:
+  description: Putnam Competition Problems
+  id: filtered_putnambench
+  pre-id: null
+questions:
+- name: putnam_2023_a1
+  problem: For a positive integer $n$, let $f_n(x) = \cos(x) \cos(2x) \cos(3x) \cdots
+    \cos(nx)$. Find the smallest $n$ such that $|f_n''(0)| > 2023$.
+  solution: Show that the solution is $n = 18$.
+- name: putnam_2022_a1
+  problem: Determine all ordered pairs of real numbers $(a,b)$ such that the line
+    $y = ax+b$ intersects the curve $y = \ln(1+x^2)$ in exactly one point.
+  solution: Show that the solution is the set of ordered pairs $(a,b)$ which satisfy
+    at least one of (1) $a = b = 0$, (2) $|a| \geq 1$, and (3) $0 < |a| < 1$ and $b
+    < \log(1 + r_{-}^2) - ar_{-}$ or $b > \log(1 + r_{+}^2) - ar_{+}$ where $r_{\pm}
+    = \frac{1 \pm \sqrt{1 - a^2}}{a}$.
+- name: putnam_2021_a1
+  problem: 'A grasshopper starts at the origin in the coordinate plane and makes a
+    sequence of hops.
+
+    Each hop has length $5$, and after each hop the grasshopper is at a point whose
+    coordinates are both integers; thus, there are $12$ possible locations for the
+    grasshopper after the first hop.
+
+    What is the smallest number of hops needed for the grasshopper to reach the point
+    $(2021, 2021)$?'
+  solution: The answer is $578$.
+- name: putnam_2020_a1
+  problem: 'Find the number of positive integers $N$ satisfying: (i) $N$ is divisible
+    by $2020$, (ii) $N$ has at most $2020$ decimal digits, (iii) The decimal digits
+    of $N$ are a string of consecutive ones followed by a string of consecutive zeros.'
+  solution: Show that the solution is $508536$.
