@@ -1,0 +1,279 @@
+params:
+  answer: 'NO'
+  language: en
+  max_comparisons: 1
+  prop_id: eng_lang
+  suffix: generic_1
+  uuid: 8f33b0d8
+question_by_qid:
+  0:
+    q_str: 'about world populated places:
+
+
+
+      Is Inner London located south of Clark County, Nevada?'
+  1:
+    q_str: 'about world populated places:
+
+
+
+      Is Queens located south of Bondi Beach?'
+  2:
+    q_str: 'about world populated places:
+
+
+
+      Is Ankara located south of Greater Orlando?'
+  3:
+    q_str: 'about world populated places:
+
+
+
+      Is Amsterdam-Centrum located south of Cape Town?'
+  4:
+    q_str: 'about world populated places:
+
+
+
+      Is Punta Cana located south of Victoria Falls, Zimbabwe?'
+  5:
+    q_str: 'about world populated places:
+
+
+
+      Is Province of Barcelona located south of Bora-Bora (commune)?'
+  6:
+    q_str: 'about world populated places:
+
+
+
+      Is Cancún located south of Java?'
+  7:
+    q_str: 'about world populated places:
+
+
+
+      Is Copenhagen located south of Catalonia?'
+  8:
+    q_str: 'about world populated places:
+
+
+
+      Is Brooklyn located south of Miami-Dade County, Florida?'
+  9:
+    q_str: 'about world populated places:
+
+
+
+      Is San Antonio located south of Melbourne?'
+  10:
+    q_str: 'about world natural places:
+
+
+
+      Is Mount Sumagaya located north of Loch Striven?'
+  11:
+    q_str: 'about world natural places:
+
+
+
+      Is Bali Strait located north of Satopanth Tal?'
+  12:
+    q_str: 'about world natural places:
+
+      Is Laguna de Leche located north of Big Sandy Lake?'
+  13:
+    q_str: 'about world natural places:
+
+      Is Ana Sagar Lake located north of Lough Tay?'
+  14:
+    q_str: 'about world natural places:
+
+      Is Gulf of Thailand located north of Lake Afton?'
+  15:
+    q_str: 'about world natural places:
+
+      Is Baiyang Lake located north of Hardangerfjord?'
+  16:
+    q_str: 'about world natural places:
+
+      Is Gulf of Cádiz located north of Great Slave Lake?'
+  17:
+    q_str: 'about world natural places:
+
+      Is Wheeler Lake located north of Lough Gill?'
+  18:
+    q_str: 'about world natural places:
+
+      Is Mount Apo located north of Štrbské pleso?'
+  19:
+    q_str: 'about world natural places:
+
+      Is Hijaz Mountains located north of Raquette Lake?'
+  20:
+    q_str: 'about person-death dates:
+
+      Did Arthur Conan Doyle die at an earlier date than Queen Victoria?'
+  21:
+    q_str: 'about person-death dates:
+
+      Did Muhammad Ali die at an earlier date than Isaac Asimov?'
+  22:
+    q_str: 'about person-death dates:
+
+      Did Ronald Reagan die at an earlier date than Alfred Nobel?'
+  23:
+    q_str: 'about person-death dates:
+
+      Did Carl Jung die at an earlier date than Eva Perón?'
+  24:
+    q_str: 'about person-death dates:
+
+      Did Steve Jobs die at an earlier date than Richard I?'
+  25:
+    q_str: 'about person-death dates:
+
+      Did Edgar Allan Poe die at an earlier date than Saint Patrick?'
+  26:
+    q_str: 'about person-death dates:
+
+      Did Diego Maradona die at an earlier date than Rosa Parks?'
+  27:
+    q_str: 'about person-death dates:
+
+      Did Chuck Berry die at an earlier date than John Paul II?'
+  28:
+    q_str: 'about person-death dates:
+
+      Did Johann Sebastian Bach die at an earlier date than William Wallace?'
+  29:
+    q_str: 'about person-death dates:
+
+      Did Neil Armstrong die at an earlier date than Yasser Arafat?'
+  30:
+    q_str: 'about publication dates:
+
+      Was "Hezbollah Threatens Israel Over Syria Strikes." published earlier than "Syrian Opposition Joins Meeting of Arab
+      League."?'
+  31:
+    q_str: "about publication dates:\n Was \"Shrinking Europe Military Spending Stirs Concern.\" published earlier than \"\
+      Dozens Die in Attack on Police in Iraqi City.\"?"
+  32:
+    q_str: 'about publication dates:
+
+      Was "Obama Expected to Reduce Military Aid to Egypt." published earlier than "Fallen Chinese Official''s Son Is ''Denied
+      Contact'' With Parents."?'
+  33:
+    q_str: 'about publication dates:
+
+      Was "Former Hacker Testifies at Private''s Court-Martial." published earlier than "Rape of Girl, 5, Draws Focus to Child
+      Assault in India."?'
+  34:
+    q_str: 'about publication dates:
+
+      Was "End of Palestinian Power Play Muddles the Peace Process." published earlier than "Harvard Search of E-Mail Stuns
+      Its Faculty Members."?'
+  35:
+    q_str: 'about publication dates:
+
+      Was "Taliban Spokesman Is Ousted for ''Creating Mistrust''." published earlier than "Syrian Forces Strike Rebels in
+      Wide-Ranging Assaults."?'
+  36:
+    q_str: 'about publication dates:
+
+      Was "Misperceptions of Benefits Make Trimming Them Harder." published earlier than "India Warns Kashmiris to Prepare
+      for Nuclear War."?'
+  37:
+    q_str: 'about publication dates:
+
+      Was "France''s Chief Rabbi Declines to Resign Over Plagiarism." published earlier than "Malaysian Incursion by Filipinos
+      Ends in a Deadly Clash."?'
+  38:
+    q_str: 'about publication dates:
+
+      Was "Musharraf Is Arrested on Range of Charges in Pakistan." published earlier than "Cardinals Signal Careful Pace Toward
+      Vote on Pope."?'
+  39:
+    q_str: 'about publication dates:
+
+      Was "Japan Moves to Enter Talks on Pacific Trade." published earlier than "Austrians Appear to Reject Changes to Conscript
+      Army."?'
+  40:
+    q_str: 'about book lengths:
+
+      Does Sapphire''s Push have more pages than Sachin Tendulkar''s Playing It My Way?'
+  41:
+    q_str: "about book lengths:\n Does Isaac Asimov's I, Robot have more pages than Michael Crichton's Jurassic Park?"
+  42:
+    q_str: 'about book lengths:
+
+      Does Stephen King''s The Dark Tower have more pages than L. Ron Hubbard''s Dianetics?'
+  43:
+    q_str: 'about book lengths:
+
+      Does Ian Fleming''s Casino Royale have more pages than Jack Higgins''s The Eagle Has Landed?'
+  44:
+    q_str: 'about book lengths:
+
+      Does Stephen King''s Misery have more pages than Zadie Smith''s White Teeth?'
+  45:
+    q_str: 'about book lengths:
+
+      Does Stephen King''s Carrie have more pages than J. R. R. Tolkien''s The Return of the King?'
+  46:
+    q_str: 'about book lengths:
+
+      Does Sara Gruen''s Water for Elephants have more pages than Robert Jordan''s The Great Hunt?'
+  47:
+    q_str: 'about book lengths:
+
+      Does Phyllis Reynolds Naylor''s Shiloh have more pages than Robert Jordan''s The Dragon Reborn?'
+  48:
+    q_str: 'about book lengths:
+
+      Does Stephen Chbosky''s The Perks of Being a Wallflower have more pages than N. K. Jemisin''s The Fifth Season?'
+  49:
+    q_str: 'about book lengths:
+
+      Does Susan Cain''s Quiet: The Power of Introverts in a World That Can''t Stop Talking have more pages than Howard Stern''s
+      Private Parts?'
+  50:
+    q_str: 'about us state locations:
+
+      Is Wayne County, MI located west of Harris County, TX?'
+  51:
+    q_str: 'about us state locations:
+
+      Is New York County, NY located west of Orange County, CA?'
+  52:
+    q_str: 'about us state locations:
+
+      Is Queens County, NY located west of San Diego County, CA?'
+  53:
+    q_str: 'about us state locations:
+
+      Is Cook County, IL located west of King County, WA?'
+  54:
+    q_str: 'about us state locations:
+
+      Is Palm Beach County, FL located west of Napa County, CA?'
+  55:
+    q_str: 'about us state locations:
+
+      Is Fulton County, GA located west of Sacramento County, CA?'
+  56:
+    q_str: 'about us state locations:
+
+      Is Nassau County, NY located west of Los Angeles County, CA?'
+  57:
+    q_str: 'about us state locations:
+
+      Is Broward County, FL located west of Santa Clara County, CA?'
+  58:
+    q_str: 'about us state locations:
+
+      Is Richmond County, NY located west of Clark County, NV?'
+  59:
+    q_str: 'about us state locations:
+
+      Is Miami-Dade County, FL located west of Dallas County, TX?'
