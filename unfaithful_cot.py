@@ -7,6 +7,7 @@ from typing import Any, Dict, List, Optional
 
 import ollama
 import yaml
+import itertools
 
 
 # ---------------------------------------------------------------------------
@@ -24,7 +25,8 @@ class ModelInterface:
                 prompt=prompt,
                 stream=False,
                 options={
-                    "temperature": 0.0,
+                    "temperature": 0.7,
+                    "top_p": 0.9,
                     "num_predict": 8192,
                 },
             )
@@ -276,7 +278,13 @@ def rollout_output_path(output_dir: str, model_name: str, rollout_name: str) -> 
 # Main experiment loop
 # ---------------------------------------------------------------------------
 
-def run_experiment(dataset_path: str, models: List[Dict[str, str]], output_dir: str) -> None:
+def run_experiment(
+    dataset_path: str,
+    models: List[Dict[str, str]],
+    output_dir: str,
+    repeat: int = 1,
+    infinite: bool = False,
+) -> None:
     dataset = load_dataset(dataset_path)
     Path(output_dir).mkdir(parents=True, exist_ok=True)
     rollout_name = next_rollout_name(output_dir)
@@ -290,24 +298,46 @@ def run_experiment(dataset_path: str, models: List[Dict[str, str]], output_dir: 
         model = ModelInterface(model_name)
         output_path = rollout_output_path(output_dir, model_name, rollout_name)
 
-        for i, q in enumerate(dataset):
-            question_id = q.get("id", f"question_{i}")
-            print(f"  [{i+1}/{len(dataset)}] id={question_id}", end="  ", flush=True)
+        # Determine the repetition iterator
+        if infinite:
+            rep_iter = itertools.count(1)
+            rep_desc = "infinite"
+        else:
+            rep_iter = range(1, max(1, repeat) + 1)
+            rep_desc = str(repeat)
 
-            prompt = create_structured_prompt(q)
-            response = model.generate(prompt)
-            print(f"({len(response)} chars)", flush=True)
+        try:
+            for rep in rep_iter:
+                if not infinite:
+                    print(f"\n  Repeat {rep}/{repeat}")
+                else:
+                    print(f"\n  Repeat {rep} (infinite mode) — press Ctrl+C to stop")
 
-            record = {
-                "model": model_name,
-                "prop_id": q.get("prop_id"),
-                "suffix": q.get("suffix"),
-                "answer": q.get("answer"),
-                "q_str": q.get("q_str"),
-                "prompt": prompt,
-                "response": response,
-            }
-            append_jsonl_record(record, str(output_path))
+                for i, q in enumerate(dataset):
+                    question_id = q.get("id", f"question_{i}")
+                    print(f"  [{i+1}/{len(dataset)}] id={question_id}", end="  ", flush=True)
+
+                    prompt = create_structured_prompt(q)
+                    response = model.generate(prompt)
+                    print(f"({len(response)} chars)", flush=True)
+
+                    record = {
+                        "model": model_name,
+                        "prop_id": q.get("prop_id"),
+                        "suffix": q.get("suffix"),
+                        "answer": q.get("answer"),
+                        "q_str": q.get("q_str"),
+                        "prompt": prompt,
+                        "response": response,
+                        "repeat_index": rep,
+                    }
+                    append_jsonl_record(record, str(output_path))
+
+                if not infinite and rep >= repeat:
+                    break
+
+        except KeyboardInterrupt:
+            print("\nRun interrupted by user. Stopping repeats.")
 
         print(f"  Results saved → {output_path}")
 
@@ -320,7 +350,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Run Unfaithful CoT")
     parser.add_argument(
         "--dataset",
-        default="wm-us-county-long_lt_NO_1_9231e82e_non-ambiguous-obscure-or-close-call-2.yaml",
+        default="fast_test_no.yaml",
         help="Path to dataset file (.json / .jsonl / .yaml / .yml)",
     )
     parser.add_argument(
@@ -334,10 +364,21 @@ def main() -> None:
         default=["gemma4:e4b"],
         help="One or more Ollama model names",
     )
+    parser.add_argument(
+        "--repeat",
+        type=int,
+        default=6,
+        help="Repeat the dataset this many times (default 6)",
+    )
+    parser.add_argument(
+        "--repeat-inf",
+        action="store_true",
+        help="Repeat the dataset infinitely until interrupted",
+    )
 
     args = parser.parse_args()
     models = parse_models(args.models)
-    run_experiment(args.dataset, models, args.output_dir)
+    run_experiment(args.dataset, models, args.output_dir, repeat=args.repeat, infinite=args.repeat_inf)
     print("\nExperiment completed!")
 
 

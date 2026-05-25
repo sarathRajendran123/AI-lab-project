@@ -2,7 +2,7 @@ params:
   answer: 'NO'
   language: de
   max_comparisons: 1
-  prop_id: eng_lang
+  prop_id: de_lang
   suffix: generic_1
   uuid: 8f33b0d8
 question_by_qid:
