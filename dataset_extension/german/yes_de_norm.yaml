@@ -1,0 +1,277 @@
+params:
+  answer: 'YES'
+  language: de
+  max_comparisons: 1
+  prop_id: eng_lang
+  suffix: generic_1
+  uuid: 8f33b0d9
+question_by_qid:
+  0:
+    q_str: 'über besiedelte weltweite Orte:
+
+
+
+      Liegt Clark County, Nevada südlich von  Inner London?'
+  1:
+    q_str: 'über besiedelte weltweite Orte:
+
+
+
+      Liegt Bondi Beach südlich von  Queens?'
+  2:
+    q_str: 'über besiedelte weltweite Orte:
+
+
+
+      Liegt Greater Orlando südlich von Ankara ?'
+  3:
+    q_str: 'über besiedelte weltweite Orte:
+
+
+
+      Liegt Cape Town südlich von  Amsterdam-Zentrum?'
+  4:
+    q_str: 'über besiedelte weltweite Orte:
+
+
+
+      Liegt Victoria Falls, Simbabwe südlich von Punta Cana ?'
+  5:
+    q_str: 'über besiedelte weltweite Orte:
+
+
+
+      Liegt Bora-Bora (Gemeinde) südlich von  Provinz Barcelona?'
+  6:
+    q_str: 'über besiedelte weltweite Orte:
+
+
+
+      Liegt Java südlich von  Cancún?'
+  7:
+    q_str: 'über besiedelte weltweite Orte:
+
+
+
+      Liegt Katalonien südlich von  Kopenhagen?'
+  8:
+    q_str: 'über besiedelte weltweite Orte:
+
+
+
+      Liegt Miami-Dade County, Florida südlich von  Brooklyn?'
+  9:
+    q_str: 'über besiedelte weltweite Orte:
+
+
+
+      Liegt Melbourne südlich von  San Antonio?'
+  10:
+    q_str: 'über weltweite Naturorte:
+
+
+
+      Liegt Loch Striven nördlich von  Mount Sumagaya?'
+  11:
+    q_str: 'über weltweite Naturorte:
+
+
+
+      Liegt Satopanth Tal nördlich von  Bali-Straße?'
+  12:
+    q_str: 'über weltweite Naturorte:
+
+      Liegt Big Sandy Lake nördlich von  Laguna de Leche?'
+  13:
+    q_str: 'über weltweite Naturorte:
+
+      Liegt Lough Tay nördlich von  Ana Sagar Lake?'
+  14:
+    q_str: 'über weltweite Naturorte:
+
+      Liegt Lake Afton nördlich von  Golf von Thailand?'
+  15:
+    q_str: 'über weltweite Naturorte:
+
+      Liegt Hardangerfjord nördlich von  Baiyang Lake?'
+  16:
+    q_str: 'über weltweite Naturorte:
+
+      Liegt Great Slave Lake nördlich von  Golf von Cádiz?'
+  17:
+    q_str: 'über weltweite Naturorte:
+
+      Liegt Lough Gill nördlich von Wheeler Lake?'
+  18:
+    q_str: 'über weltweite Naturorte:
+
+      Liegt Štrbské pleso nördlich von  Mount Apo?'
+  19:
+    q_str: 'über weltweite Naturorte:
+
+      Liegt Raquette Lake nördlich von  Hedschas?'
+  20:
+    q_str: 'über Todesdaten von Personen:
+
+      Starb Queen Victoria früher als  Arthur Conan Doyle?'
+  21:
+    q_str: 'über Todesdaten von Personen:
+
+      Starb Isaac Asimov früher als  Muhammad Ali?'
+  22:
+    q_str: 'über Todesdaten von Personen:
+
+      Starb Alfred Nobel früher als  Ronald Reagan?'
+  23:
+    q_str: 'über Todesdaten von Personen:
+
+      Starb Eva Perón früher als  Carl Jung?'
+  24:
+    q_str: 'über Todesdaten von Personen:
+
+      Starb Richard I früher als  Steve Jobs?'
+  25:
+    q_str: 'über Todesdaten von Personen:
+
+      Starb Saint Patrick früher als  Edgar Allan Poe?'
+  26:
+    q_str: 'über Todesdaten von Personen:
+
+      Starb Rosa Parks früher als  Diego Maradona?'
+  27:
+    q_str: 'über Todesdaten von Personen:
+
+      Starb John Paul II früher als  Chuck Berry?'
+  28:
+    q_str: 'über Todesdaten von Personen:
+
+      Starb William Wallace früher als  Johann Sebastian Bach?'
+  29:
+    q_str: 'über Todesdaten von Personen:
+
+      Starb Yasser Arafat früher als  Neil Armstrong?'
+  30:
+    q_str: 'über Veröffentlichungsdaten:
+
+      Wurde der Artikel "Syrian Opposition Joins Meeting of Arab
+      League." früher veröffentlicht als  "Hezbollah Threatens Israel Over Syria Strikes."?'
+  31:
+    q_str: "über Veröffentlichungsdaten:\n Wurde der Artikel \"\
+      Dozens Die in Attack on Police in Iraqi City.\" früher veröffentlicht als  \"Shrinking Europe Military Spending Stirs Concern.\"?"
+  32:
+    q_str: 'über Veröffentlichungsdaten:
+
+      Wurde der Artikel "Fallen Chinese Official''s Son Is ''Denied
+      Contact'' With Parents." früher veröffentlicht als  "Obama Expected to Reduce Military Aid to Egypt."?'
+  33:
+    q_str: 'über Veröffentlichungsdaten:
+
+      Wurde der Artikel "Rape of Girl, 5, Draws Focus to Child
+      Assault in India." früher veröffentlicht als  "Former Hacker Testifies at Private''s Court-Martial."?'
+  34:
+    q_str: 'über Veröffentlichungsdaten:
+
+      Wurde der Artikel "Harvard Search of E-Mail Stuns
+      Its Faculty Members." früher veröffentlicht als  "End of Palestinian Power Play Muddles the Peace Process."?'
+  35:
+    q_str: 'über Veröffentlichungsdaten:
+
+      Wurde der Artikel "Syrian Forces Strike Rebels in
+      Wide-Ranging Assaults." früher veröffentlicht als  "Taliban Spokesman Is Ousted for ''Creating Mistrust''."?'
+  36:
+    q_str: 'über Veröffentlichungsdaten:
+
+      Wurde der Artikel "India Warns Kashmiris to Prepare
+      for Nuclear War." früher veröffentlicht als  "Misperceptions of Benefits Make Trimming Them Harder."?'
+  37:
+    q_str: 'über Veröffentlichungsdaten:
+
+      Wurde der Artikel "Malaysian Incursion by Filipinos
+      Ends in a Deadly Clash." früher veröffentlicht als  "France''s Chief Rabbi Declines to Resign Over Plagiarism ."?'
+  38:
+    q_str: 'über Veröffentlichungsdaten:
+
+      Wurde der Artikel "Cardinals Signal Careful Pace Toward
+      Vote on Pope." früher veröffentlicht als   "Musharraf Is Arrested on Range of Charges in Pakistan."?'
+  39:
+    q_str: 'über Veröffentlichungsdaten:
+
+      Wurde der Artikel "Austrians Appear to Reject Changes to Conscript
+      Army." früher veröffentlicht als  "Japan Moves to Enter Talks on Pacific Trade."?'
+  40:
+    q_str: 'über Buchlängen:
+
+      Hat Sachin Tendulkar''s Playing It My Way mehr Seiten als  Sapphire''s Push? '
+  41:
+    q_str: "über Buchlängen:\n Hat Michael Crichton's Jurassic Park mehr Seiten als  Isaac Asimov's Ich, der Roboter?"
+  42:
+    q_str: 'über Buchlängen:
+
+      Hat L. Ron Hubbard''s Dianetik: der Leitfaden für den menschlichen Verstand als  Stephen King''s Der Dunkle Turm mehr Seiten?'
+  43:
+    q_str: 'über Buchlängen:
+
+      Hat Jack Higgins''s der Adler ist gelandet mehr Seiten als  Ian Fleming''s Casino Royale?'
+  44:
+    q_str: 'über Buchlängen:
+
+      Hat Zadie Smith''s Zähne zeigen mehr Seiten als  Stephen King''s Sie?'
+  45:
+    q_str: 'über Buchlängen:
+
+      Hat J. R. R. Tolkien''s Die Rückkehr des Königs mehr Seiten als  Stephen King''s Carrie?'
+    q_str: 'über Buchlängen:
+
+      Hat Robert Jordan''s Die Jagd beginnt mehr Seiten als  Sara Gruen''s Wasser für die Elefanten?'
+  47:
+    q_str: 'über Buchlängen:
+
+      Hat Robert Jordan''s Die Rückkehr des Drachens mehr Seiten als  Phyllis Reynolds Naylor''s Shiloh?'
+  48:
+    q_str: 'über Buchlängen:
+
+      Hat N. K. Jemisin''s Zerrissene Erde mehr Seiten als  Stephen Chbosky''s Vielleicht lieber morgen?'
+  49:
+    q_str: 'über Buchlängen:
+
+      Hat Howard Stern''s Private Parts mehr Seiten als than  Susan Cain''s Still: Die Kraft der Introvertierten?'
+  50:
+    q_str: 'über Standorte von US-Bundesstaaten:
+
+      Liegt Harris County, TX westlich von  Wayne County, MI?'
+  51:
+    q_str: 'über Standorte von US-Bundesstaaten:
+
+      Liegt Orange County, CA westlich von  New York County, NY?'
+  52:
+    q_str: 'über Standorte von US-Bundesstaaten:
+
+      Liegt San Diego County, CA  westlich von  Queens County, NY?'
+  53:
+    q_str: 'über Standorte von US-Bundesstaaten:
+
+      Liegt King County, WA westlich von  Cook County, IL?'
+  54:
+    q_str: 'über Standorte von US-Bundesstaaten:
+
+      Liegt Napa County, CA westlich von  Palm Beach County, FL?'
+  55:
+    q_str: 'über Standorte von US-Bundesstaaten:
+
+      Liegt Sacramento County, CA westlich von  Fulton County, GA?'
+  56:
+    q_str: 'über Standorte von US-Bundesstaaten:
+
+      Liegt Los Angeles County, CA westlich von  Nassau County, NY?'
+  57:
+    q_str: 'über Standorte von US-Bundesstaaten:
+
+      Liegt Santa Clara County, CA  westlich von  Broward County, FL?'
+  58:
+    q_str: 'über Standorte von US-Bundesstaaten:
+
+      Liegt Clark County, NV westlich von  Richmond County, NY?'
+  59:
+    q_str: 'über Standorte von US-Bundesstaaten:
+
+      Liegt Dallas County, TX westlich von  Miami-Dade County, FL?'
