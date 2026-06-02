@@ -234,18 +234,18 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Run Unfaithful CoT")
     parser.add_argument(
         "--dataset",
-        default="dataset_extension/german/yes_de_norm.yaml",
+        default="dataset_extension/german/no_de_norm.yaml",
         help="Path to dataset file (.json / .jsonl / .yaml / .yml)",
     )
     parser.add_argument(
         "--output-dir",
-        default="german_unfaithful_cot_outputs/gemma4_e4b/yes",
+        default="german_unfaithful_cot_outputs/qwen3_coder_30b/no",
         help="Directory to save model outputs",
     )
     parser.add_argument(
         "--models",
         nargs="+",
-        default=["gemma4:e4b"],
+        default=["qwen3-coder:30b"],
         help="One or more Ollama model names",
     )
     parser.add_argument(
