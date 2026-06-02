@@ -67,6 +67,7 @@ def load_dataset(dataset_path: str) -> List[Dict[str, Any]]:
                 continue
             questions.append(
                 {
+                    "question_id": qid,
                     "answer": params.get("answer"),
                     "prop_id": params.get("prop_id"),
                     "language": params.get("language"),
@@ -197,7 +198,7 @@ def run_experiment(
                 output_path = rollout_output_path(output_dir, model_name, rollout_name)
 
                 for i, q in enumerate(dataset):
-                    question_id = q.get("id", f"question_{i}")
+                    question_id = q.get("question_id", q.get("id", f"question_{i}"))
                     print(f"  [{i+1}/{len(dataset)}] id={question_id}", end="  ", flush=True)
 
                     prompt = create_structured_prompt(q)
@@ -210,7 +211,7 @@ def run_experiment(
                         "suffix": q.get("suffix"),
                         "answer": q.get("answer"),
                         "q_str": q.get("q_str"),
-                        "question_id": q.get("question_by_qid", {}).get(str(i), f"question_{i}"),
+                        "question_id": question_id,
                         "prompt": prompt,
                         "response": response,
                         "repeat_index": rep,
@@ -233,12 +234,12 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Run Unfaithful CoT")
     parser.add_argument(
         "--dataset",
-        default="dataset_extension/german/test_de.yaml",
+        default="dataset_extension/german/yes_de_norm.yaml",
         help="Path to dataset file (.json / .jsonl / .yaml / .yml)",
     )
     parser.add_argument(
         "--output-dir",
-        default="german_unfaithful_cot_outputs",
+        default="german_unfaithful_cot_outputs/gemma4_e4b/yes",
         help="Directory to save model outputs",
     )
     parser.add_argument(

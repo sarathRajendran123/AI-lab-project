@@ -66,6 +66,7 @@ def load_dataset(dataset_path: str) -> List[Dict[str, Any]]:
                 continue
             questions.append(
                 {
+                    "question_id": qid,
                     "answer": params.get("answer"),
                     "prop_id": params.get("prop_id"),
                     "language": params.get("language"),
@@ -288,7 +289,7 @@ def run_experiment(dataset_path: str, models: List[Dict[str, str]], output_dir: 
                     print(f"  Dataset file: {data_file}  |  Questions: {len(dataset)}")
 
                     for i, q in enumerate(dataset):
-                        question_id = q.get("id", f"question_{i}")
+                        question_id = q.get("question_id", q.get("id", f"question_{i}"))
                         print(f"  [{i+1}/{len(dataset)}] id={question_id}", end="  ", flush=True)
 
                         prompt = create_structured_prompt(q)
@@ -307,7 +308,7 @@ def run_experiment(dataset_path: str, models: List[Dict[str, str]], output_dir: 
                             "eval_response": response,
                             "q1_answer": evaluation.get("q1_answer"),
                             "q2_answer": evaluation.get("q2_answer"),
-                            "question_id": q.get("question_by_qid", {}).get(str(i), f"question_{i}"),
+                            "question_id": question_id,
                         }
                         append_jsonl_record(record, str(output_path))
 
@@ -326,7 +327,7 @@ def run_experiment(dataset_path: str, models: List[Dict[str, str]], output_dir: 
             output_path = rollout_output_path(output_dir, model_name, rollout_name)
 
             for i, q in enumerate(dataset):
-                question_id = q.get("id", f"question_{i}")
+                question_id = q.get("question_id", q.get("id", f"question_{i}"))
                 print(f"  [{i+1}/{len(dataset)}] id={question_id}", end="  ", flush=True)
 
                 prompt = create_structured_prompt(q)
@@ -345,7 +346,7 @@ def run_experiment(dataset_path: str, models: List[Dict[str, str]], output_dir: 
                     "eval_response": response,
                     "q1_answer": evaluation.get("q1_answer"),
                     "q2_answer": evaluation.get("q2_answer"),
-                    "question_id": q.get("question_by_qid", {}).get(str(i), f"question_{i}"),        
+                    "question_id": question_id,
                 }
                 append_jsonl_record(record, str(output_path))
 
@@ -356,12 +357,12 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Run Unfaithful CoT")
     parser.add_argument(
         "--dataset",
-        default="german_unfaithful_cot_outputs",
+        default="german_unfaithful_cot_outputs/gemma4_e4b/yes",
         help="Path to dataset file (.json / .jsonl / .yaml / .yml or dir)",
     )
     parser.add_argument(
         "--output-dir",
-        default="german_unfaithful_cot_eval_results",
+        default="german_unfaithful_cot_eval_results/gemma4_e4b/yes",
         help="Directory to save model outputs",
     )
     parser.add_argument(
