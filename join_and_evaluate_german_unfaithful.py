@@ -49,6 +49,18 @@ def normalize_question_id(qid: Any) -> int:
     raise ValueError(f"Unsupported question_id format: {qid!r}")
 
 
+def parse_mismatches_summary(summary_path: str) -> set:
+    """Extract unique line numbers from the mismatches summary file."""
+    line_numbers = set()
+    with open(summary_path, "r", encoding="utf-8") as f:
+        for line in f:
+            # Extract line numbers from patterns like "line 35:" or "line 2:"
+            match = re.search(r"^line (\d+):", line.strip())
+            if match:
+                line_numbers.add(int(match.group(1)))
+    return line_numbers
+
+
 def collect_rollouts(base_dir: Path) -> List[str]:
     yes_dir = base_dir / "yes"
     if not yes_dir.exists():
@@ -59,13 +71,17 @@ def collect_rollouts(base_dir: Path) -> List[str]:
     return rollout_dirs
 
 
-def build_row_map(folder: Path, rollout: str) -> Dict[int, Dict[str, Any]]:
+def build_row_map(folder: Path, rollout: str, line_filter: set = None) -> Dict[int, Dict[str, Any]]:
     source_path = folder / rollout / "gemma4_e4b_results.jsonl"
     if not source_path.exists():
         raise FileNotFoundError(f"Missing expected file: {source_path}")
 
     rows: Dict[int, Dict[str, Any]] = {}
-    for obj in read_jsonl(source_path):
+    for line_num, obj in enumerate(read_jsonl(source_path), start=1):
+        # Skip lines that are not in the filter (if filter is provided)
+        if line_filter is not None and line_num not in line_filter:
+            continue
+            
         qid = obj.get("question_id")
         if qid is None:
             raise ValueError(f"Row missing question_id in {source_path}")
@@ -75,11 +91,18 @@ def build_row_map(folder: Path, rollout: str) -> Dict[int, Dict[str, Any]]:
 
 
 def normalize_pair(yes_row: Dict[str, Any], no_row: Dict[str, Any], rollout: str) -> Dict[str, Any]:
-    q1_str = yes_row.get("original_response") or yes_row.get("response") or yes_row.get("q_str", "")
-    q2_str = no_row.get("original_response") or no_row.get("response") or no_row.get("q_str", "")
-
+    # YES row: map original_response to q1_str
+    q1_str = yes_row.get("original_response") or yes_row.get("response") or ""
+    
+    # NO row: map original_response to q2_str
+    q2_str = no_row.get("original_response") or no_row.get("response") or ""
+    
+    # YES row: q1_answer remains as is
     q1_answer = yes_row.get("q1_answer") or yes_row.get("answer")
-    q2_answer = no_row.get("q1_answer", no_row.get("q2_answer", no_row.get("answer")))
+    
+    # NO row: map q1_answer to q2_answer (the no_row's answer becomes the second question's answer)
+    q2_answer = no_row.get("q1_answer") or no_row.get("q2_answer") or no_row.get("answer")
+    
     qid = normalize_question_id(yes_row.get("question_id"))
 
     return {
@@ -97,11 +120,17 @@ def normalize_pair(yes_row: Dict[str, Any], no_row: Dict[str, Any], rollout: str
 
 
 def join_german_unfaithful_eval_results(
-    base_dir: str, output_path: str, start_rollout: int = 1
+    base_dir: str, output_path: str, mismatches_summary: str = None, start_rollout: int = 1
 ) -> List[Dict[str, Any]]:
     base_dir_path = Path(base_dir)
     rollout_dirs = collect_rollouts(base_dir_path)
     rollout_dirs = [r for r in rollout_dirs if int(r.split("_")[-1]) >= start_rollout]
+
+    # Parse mismatches summary to get line numbers to filter
+    line_filter = None
+    if mismatches_summary:
+        line_filter = parse_mismatches_summary(mismatches_summary)
+        print(f"Filtering to {len(line_filter)} mismatched lines: {sorted(line_filter)}")
 
     output_path_obj = Path(output_path)
     output_path_obj.parent.mkdir(parents=True, exist_ok=True)
@@ -112,8 +141,8 @@ def join_german_unfaithful_eval_results(
 
     with output_path_obj.open("w", encoding="utf-8") as out_fh:
         for rollout in rollout_dirs:
-            yes_rows = build_row_map(base_dir_path / "yes", rollout)
-            no_rows = build_row_map(base_dir_path / "no", rollout)
+            yes_rows = build_row_map(base_dir_path / "yes", rollout, line_filter)
+            no_rows = build_row_map(base_dir_path / "no", rollout, line_filter)
 
             for qid, yes_row in yes_rows.items():
                 no_row = no_rows.get(qid)
@@ -353,6 +382,11 @@ def main() -> None:
         help="Evaluation output JSONL path.",
     )
     parser.add_argument(
+        "--mismatches-summary",
+        default=None,
+        help="Path to mismatches summary file to filter to only those lines.",
+    )
+    parser.add_argument(
         "--models",
         nargs="+",
         default=["gemma4:e4b"],
@@ -385,6 +419,7 @@ def main() -> None:
     joined_rows = join_german_unfaithful_eval_results(
         base_dir=args.base_dir,
         output_path=args.joined_output,
+        mismatches_summary=args.mismatches_summary,
         start_rollout=args.start_rollout,
     )
 
