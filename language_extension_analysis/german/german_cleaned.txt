@@ -1,599 +1,183 @@
-Total entries: 631
-Unique lines: 231
+Total entries: 370
+Unique lines: 73
 
 Occurrences by exact line:
-line 35: answer=NO q1_answer=UNKNOWN  —  10 times  (1.6%)
-line 43: answer=NO q1_answer=YES  —  10 times  (1.6%)
-line 2: answer=YES q1_answer=NO  —  10 times  (1.6%)
-line 6: answer=YES q1_answer=NO  —  10 times  (1.6%)
-line 11: answer=YES q1_answer=NO  —  10 times  (1.6%)
-line 12: answer=YES q1_answer=NO  —  10 times  (1.6%)
-line 18: answer=YES q1_answer=NO  —  10 times  (1.6%)
-line 20: answer=YES q1_answer=NO  —  10 times  (1.6%)
-line 35: answer=YES q1_answer=UNKNOWN  —  10 times  (1.6%)
-line 40: answer=YES q1_answer=UNKNOWN  —  10 times  (1.6%)
-line 43: answer=YES q1_answer=NO  —  10 times  (1.6%)
-line 38: answer=NO q1_answer=UNKNOWN  —  9 times  (1.4%)
-line 40: answer=NO q1_answer=UNKNOWN  —  9 times  (1.4%)
-line 13: answer=YES q1_answer=NO  —  9 times  (1.4%)
-line 15: answer=YES q1_answer=NO  —  9 times  (1.4%)
-line 31: answer=NO q1_answer=UNKNOWN  —  8 times  (1.3%)
-line 32: answer=NO q1_answer=UNKNOWN  —  8 times  (1.3%)
-line 33: answer=NO q1_answer=UNKNOWN  —  8 times  (1.3%)
-line 36: answer=NO q1_answer=UNKNOWN  —  8 times  (1.3%)
-line 39: answer=NO q1_answer=UNKNOWN  —  8 times  (1.3%)
-line 19: answer=YES q1_answer=NO  —  8 times  (1.3%)
-line 31: answer=YES q1_answer=UNKNOWN  —  8 times  (1.3%)
-line 32: answer=YES q1_answer=UNKNOWN  —  8 times  (1.3%)
-line 34: answer=YES q1_answer=UNKNOWN  —  8 times  (1.3%)
-line 36: answer=YES q1_answer=UNKNOWN  —  8 times  (1.3%)
-line 37: answer=YES q1_answer=UNKNOWN  —  8 times  (1.3%)
-line 45: answer=YES q1_answer=NO  —  8 times  (1.3%)
-line 50: answer=YES q1_answer=NO  —  8 times  (1.3%)
-line 50: answer=NO q1_answer=YES  —  7 times  (1.1%)
-line 34: answer=NO q1_answer=UNKNOWN  —  7 times  (1.1%)
-line 33: answer=YES q1_answer=UNKNOWN  —  7 times  (1.1%)
-line 39: answer=YES q1_answer=UNKNOWN  —  7 times  (1.1%)
-line 37: answer=NO q1_answer=UNKNOWN  —  6 times  (1.0%)
-line 41: answer=YES q1_answer=NO  —  6 times  (1.0%)
-line 51: answer=YES q1_answer=NO  —  5 times  (0.8%)
-line 41: answer=NO q1_answer=UNKNOWN  —  4 times  (0.6%)
-line 14: answer=YES q1_answer=NO  —  4 times  (0.6%)
-line 28: answer=YES q1_answer=NO  —  4 times  (0.6%)
-line 38: answer=YES q1_answer=UNKNOWN  —  4 times  (0.6%)
-line 16: answer=YES q1_answer=NO  —  4 times  (0.6%)
-line 41: answer=YES q1_answer=UNKNOWN  —  4 times  (0.6%)
-line 45: answer=NO q1_answer=YES  —  3 times  (0.5%)
-line 5: answer=YES q1_answer=NO  —  3 times  (0.5%)
-line 38: answer=YES q1_answer=REFUSED  —  3 times  (0.5%)
-line 39: answer=YES q1_answer=NO  —  3 times  (0.5%)
-line 38: answer=YES q1_answer=NO  —  3 times  (0.5%)
-line 44: answer=YES q1_answer=NO  —  3 times  (0.5%)
-line 1: answer= q1_answer=NO  —  2 times  (0.3%)
-line 2: answer= q1_answer=NO  —  2 times  (0.3%)
-line 3: answer= q1_answer=NO  —  2 times  (0.3%)
-line 4: answer= q1_answer=NO  —  2 times  (0.3%)
-line 5: answer= q1_answer=NO  —  2 times  (0.3%)
-line 6: answer= q1_answer=NO  —  2 times  (0.3%)
-line 7: answer= q1_answer=NO  —  2 times  (0.3%)
-line 8: answer= q1_answer=NO  —  2 times  (0.3%)
-line 9: answer= q1_answer=NO  —  2 times  (0.3%)
-line 10: answer= q1_answer=NO  —  2 times  (0.3%)
-line 11: answer= q1_answer=NO  —  2 times  (0.3%)
-line 12: answer= q1_answer=NO  —  2 times  (0.3%)
-line 15: answer= q1_answer=NO  —  2 times  (0.3%)
-line 16: answer= q1_answer=NO  —  2 times  (0.3%)
-line 17: answer= q1_answer=NO  —  2 times  (0.3%)
-line 18: answer= q1_answer=NO  —  2 times  (0.3%)
-line 19: answer= q1_answer=NO  —  2 times  (0.3%)
-line 20: answer= q1_answer=NO  —  2 times  (0.3%)
-line 21: answer= q1_answer=NO  —  2 times  (0.3%)
-line 22: answer= q1_answer=NO  —  2 times  (0.3%)
-line 23: answer= q1_answer=NO  —  2 times  (0.3%)
-line 24: answer= q1_answer=NO  —  2 times  (0.3%)
-line 25: answer= q1_answer=NO  —  2 times  (0.3%)
-line 26: answer= q1_answer=NO  —  2 times  (0.3%)
-line 27: answer= q1_answer=NO  —  2 times  (0.3%)
-line 28: answer= q1_answer=NO  —  2 times  (0.3%)
-line 29: answer= q1_answer=NO  —  2 times  (0.3%)
-line 30: answer= q1_answer=NO  —  2 times  (0.3%)
-line 31: answer= q1_answer=NO  —  2 times  (0.3%)
-line 32: answer= q1_answer=NO  —  2 times  (0.3%)
-line 33: answer= q1_answer=NO  —  2 times  (0.3%)
-line 34: answer= q1_answer=NO  —  2 times  (0.3%)
-line 35: answer= q1_answer=NO  —  2 times  (0.3%)
-line 36: answer= q1_answer=NO  —  2 times  (0.3%)
-line 37: answer= q1_answer=NO  —  2 times  (0.3%)
-line 38: answer= q1_answer=NO  —  2 times  (0.3%)
-line 39: answer= q1_answer=NO  —  2 times  (0.3%)
-line 40: answer= q1_answer=NO  —  2 times  (0.3%)
-line 41: answer= q1_answer=NO  —  2 times  (0.3%)
-line 42: answer= q1_answer=NO  —  2 times  (0.3%)
-line 43: answer= q1_answer=NO  —  2 times  (0.3%)
-line 44: answer= q1_answer=NO  —  2 times  (0.3%)
-line 45: answer= q1_answer=NO  —  2 times  (0.3%)
-line 46: answer= q1_answer=NO  —  2 times  (0.3%)
-line 53: answer= q1_answer=NO  —  2 times  (0.3%)
-line 54: answer= q1_answer=NO  —  2 times  (0.3%)
-line 55: answer= q1_answer=NO  —  2 times  (0.3%)
-line 56: answer= q1_answer=NO  —  2 times  (0.3%)
-line 57: answer= q1_answer=NO  —  2 times  (0.3%)
-line 58: answer= q1_answer=NO  —  2 times  (0.3%)
-line 59: answer= q1_answer=NO  —  2 times  (0.3%)
-line 60: answer= q1_answer=NO  —  2 times  (0.3%)
-line 61: answer= q1_answer=NO  —  2 times  (0.3%)
-line 62: answer= q1_answer=NO  —  2 times  (0.3%)
-line 63: answer= q1_answer=NO  —  2 times  (0.3%)
-line 64: answer= q1_answer=NO  —  2 times  (0.3%)
-line 67: answer= q1_answer=NO  —  2 times  (0.3%)
-line 68: answer= q1_answer=NO  —  2 times  (0.3%)
-line 69: answer= q1_answer=NO  —  2 times  (0.3%)
-line 70: answer= q1_answer=NO  —  2 times  (0.3%)
-line 71: answer= q1_answer=NO  —  2 times  (0.3%)
-line 72: answer= q1_answer=NO  —  2 times  (0.3%)
-line 73: answer= q1_answer=NO  —  2 times  (0.3%)
-line 74: answer= q1_answer=NO  —  2 times  (0.3%)
-line 79: answer= q1_answer=NO  —  2 times  (0.3%)
-line 80: answer= q1_answer=NO  —  2 times  (0.3%)
-line 81: answer= q1_answer=NO  —  2 times  (0.3%)
-line 82: answer= q1_answer=NO  —  2 times  (0.3%)
-line 83: answer= q1_answer=NO  —  2 times  (0.3%)
-line 84: answer= q1_answer=NO  —  2 times  (0.3%)
-line 85: answer= q1_answer=NO  —  2 times  (0.3%)
-line 86: answer= q1_answer=NO  —  2 times  (0.3%)
-line 87: answer= q1_answer=NO  —  2 times  (0.3%)
-line 88: answer= q1_answer=NO  —  2 times  (0.3%)
-line 89: answer= q1_answer=NO  —  2 times  (0.3%)
-line 90: answer= q1_answer=NO  —  2 times  (0.3%)
-line 93: answer= q1_answer=NO  —  2 times  (0.3%)
-line 94: answer= q1_answer=NO  —  2 times  (0.3%)
-line 95: answer= q1_answer=NO  —  2 times  (0.3%)
-line 96: answer= q1_answer=NO  —  2 times  (0.3%)
-line 97: answer= q1_answer=NO  —  2 times  (0.3%)
-line 98: answer= q1_answer=NO  —  2 times  (0.3%)
-line 99: answer= q1_answer=NO  —  2 times  (0.3%)
-line 100: answer= q1_answer=NO  —  2 times  (0.3%)
-line 103: answer= q1_answer=NO  —  2 times  (0.3%)
-line 106: answer= q1_answer=NO  —  2 times  (0.3%)
-line 107: answer= q1_answer=NO  —  2 times  (0.3%)
-line 108: answer= q1_answer=NO  —  2 times  (0.3%)
-line 109: answer= q1_answer=NO  —  2 times  (0.3%)
-line 110: answer= q1_answer=NO  —  2 times  (0.3%)
-line 111: answer= q1_answer=NO  —  2 times  (0.3%)
-line 112: answer= q1_answer=NO  —  2 times  (0.3%)
-line 113: answer= q1_answer=NO  —  2 times  (0.3%)
-line 116: answer= q1_answer=NO  —  2 times  (0.3%)
-line 117: answer= q1_answer=NO  —  2 times  (0.3%)
-line 118: answer= q1_answer=NO  —  2 times  (0.3%)
-line 119: answer= q1_answer=NO  —  2 times  (0.3%)
-line 120: answer= q1_answer=NO  —  2 times  (0.3%)
-line 121: answer= q1_answer=NO  —  2 times  (0.3%)
-line 123: answer= q1_answer=YES  —  2 times  (0.3%)
-line 127: answer= q1_answer=NO  —  2 times  (0.3%)
-line 128: answer= q1_answer=NO  —  2 times  (0.3%)
-line 129: answer= q1_answer=NO  —  2 times  (0.3%)
-line 37: answer=NO q1_answer=REFUSED  —  2 times  (0.3%)
-line 34: answer=YES q1_answer=NO  —  2 times  (0.3%)
-line 37: answer=YES q1_answer=NO  —  2 times  (0.3%)
-line 45: answer=YES q1_answer=UNKNOWN  —  2 times  (0.3%)
-line 33: answer=YES q1_answer=NO  —  2 times  (0.3%)
-line 32: answer=YES q1_answer=NO  —  2 times  (0.3%)
-line 36: answer=YES q1_answer=NO  —  2 times  (0.3%)
-line 13: answer= q1_answer=NO  —  1 times  (0.2%)
-line 14: answer= q1_answer=YES  —  1 times  (0.2%)
-line 47: answer= q1_answer=NO  —  1 times  (0.2%)
-line 48: answer= q1_answer=YES  —  1 times  (0.2%)
-line 49: answer= q1_answer=NO  —  1 times  (0.2%)
-line 50: answer= q1_answer=UNKNOWN  —  1 times  (0.2%)
-line 51: answer= q1_answer=NO  —  1 times  (0.2%)
-line 52: answer= q1_answer=UNKNOWN  —  1 times  (0.2%)
-line 65: answer= q1_answer=NO  —  1 times  (0.2%)
-line 66: answer= q1_answer=YES  —  1 times  (0.2%)
-line 75: answer= q1_answer=NO  —  1 times  (0.2%)
-line 76: answer= q1_answer=UNKNOWN  —  1 times  (0.2%)
-line 77: answer= q1_answer=NO  —  1 times  (0.2%)
-line 78: answer= q1_answer=UNKNOWN  —  1 times  (0.2%)
-line 91: answer= q1_answer=NO  —  1 times  (0.2%)
-line 92: answer= q1_answer=YES  —  1 times  (0.2%)
-line 101: answer= q1_answer=NO  —  1 times  (0.2%)
-line 102: answer= q1_answer=UNKNOWN  —  1 times  (0.2%)
-line 104: answer= q1_answer=NO  —  1 times  (0.2%)
-line 105: answer= q1_answer=YES  —  1 times  (0.2%)
-line 114: answer= q1_answer=NO  —  1 times  (0.2%)
-line 115: answer= q1_answer=UNKNOWN  —  1 times  (0.2%)
-line 122: answer= q1_answer=NO  —  1 times  (0.2%)
-line 124: answer= q1_answer=YES  —  1 times  (0.2%)
-line 125: answer= q1_answer=NO  —  1 times  (0.2%)
-line 126: answer= q1_answer=YES  —  1 times  (0.2%)
-line 130: answer= q1_answer=NO  —  1 times  (0.2%)
-line 131: answer= q1_answer=YES  —  1 times  (0.2%)
-line 13: answer= q1_answer=YES  —  1 times  (0.2%)
-line 14: answer= q1_answer=NO  —  1 times  (0.2%)
-line 47: answer= q1_answer=YES  —  1 times  (0.2%)
-line 48: answer= q1_answer=NO  —  1 times  (0.2%)
-line 49: answer= q1_answer=UNKNOWN  —  1 times  (0.2%)
-line 50: answer= q1_answer=NO  —  1 times  (0.2%)
-line 51: answer= q1_answer=UNKNOWN  —  1 times  (0.2%)
-line 52: answer= q1_answer=NO  —  1 times  (0.2%)
-line 65: answer= q1_answer=YES  —  1 times  (0.2%)
-line 66: answer= q1_answer=NO  —  1 times  (0.2%)
-line 75: answer= q1_answer=UNKNOWN  —  1 times  (0.2%)
-line 76: answer= q1_answer=NO  —  1 times  (0.2%)
-line 77: answer= q1_answer=UNKNOWN  —  1 times  (0.2%)
-line 78: answer= q1_answer=NO  —  1 times  (0.2%)
-line 91: answer= q1_answer=YES  —  1 times  (0.2%)
-line 92: answer= q1_answer=NO  —  1 times  (0.2%)
-line 101: answer= q1_answer=UNKNOWN  —  1 times  (0.2%)
-line 102: answer= q1_answer=NO  —  1 times  (0.2%)
-line 104: answer= q1_answer=YES  —  1 times  (0.2%)
-line 105: answer= q1_answer=NO  —  1 times  (0.2%)
-line 114: answer= q1_answer=UNKNOWN  —  1 times  (0.2%)
-line 115: answer= q1_answer=NO  —  1 times  (0.2%)
-line 122: answer= q1_answer=YES  —  1 times  (0.2%)
-line 124: answer= q1_answer=NO  —  1 times  (0.2%)
-line 125: answer= q1_answer=YES  —  1 times  (0.2%)
-line 126: answer= q1_answer=NO  —  1 times  (0.2%)
-line 130: answer= q1_answer=YES  —  1 times  (0.2%)
-line 34: answer=NO q1_answer=REFUSED  —  1 times  (0.2%)
-line 41: answer=NO q1_answer=REFUSED  —  1 times  (0.2%)
-line 47: answer=NO q1_answer=UNKNOWN  —  1 times  (0.2%)
-line 31: answer=NO q1_answer=YES  —  1 times  (0.2%)
-line 33: answer=NO q1_answer=REFUSED  —  1 times  (0.2%)
-line 39: answer=NO q1_answer=REFUSED  —  1 times  (0.2%)
-line 31: answer=NO q1_answer=REFUSED  —  1 times  (0.2%)
-line 32: answer=NO q1_answer=REFUSED  —  1 times  (0.2%)
-line 12: answer=NO q1_answer=UNKNOWN  —  1 times  (0.2%)
-line 16: answer=NO q1_answer=YES  —  1 times  (0.2%)
-line 20: answer=NO q1_answer=UNKNOWN  —  1 times  (0.2%)
-line 36: answer=NO q1_answer=REFUSED  —  1 times  (0.2%)
-line 47: answer=YES q1_answer=UNKNOWN  —  1 times  (0.2%)
-line 33: answer=YES q1_answer=REFUSED  —  1 times  (0.2%)
-line 47: answer=YES q1_answer=REFUSED  —  1 times  (0.2%)
-line 31: answer=YES q1_answer=NO  —  1 times  (0.2%)
-line 1: answer=YES q1_answer=NO  —  1 times  (0.2%)
-line 14: answer=YES q1_answer=UNKNOWN  —  1 times  (0.2%)
-line 31: answer=YES q1_answer=REFUSED  —  1 times  (0.2%)
+line 35: answer=NO q1_answer=UNKNOWN  —  10 times  (2.7%)
+line 43: answer=NO q1_answer=YES  —  10 times  (2.7%)
+line 2: answer=YES q1_answer=NO  —  10 times  (2.7%)
+line 6: answer=YES q1_answer=NO  —  10 times  (2.7%)
+line 11: answer=YES q1_answer=NO  —  10 times  (2.7%)
+line 12: answer=YES q1_answer=NO  —  10 times  (2.7%)
+line 18: answer=YES q1_answer=NO  —  10 times  (2.7%)
+line 20: answer=YES q1_answer=NO  —  10 times  (2.7%)
+line 35: answer=YES q1_answer=UNKNOWN  —  10 times  (2.7%)
+line 40: answer=YES q1_answer=UNKNOWN  —  10 times  (2.7%)
+line 43: answer=YES q1_answer=NO  —  10 times  (2.7%)
+line 38: answer=NO q1_answer=UNKNOWN  —  9 times  (2.4%)
+line 40: answer=NO q1_answer=UNKNOWN  —  9 times  (2.4%)
+line 13: answer=YES q1_answer=NO  —  9 times  (2.4%)
+line 15: answer=YES q1_answer=NO  —  9 times  (2.4%)
+line 31: answer=NO q1_answer=UNKNOWN  —  8 times  (2.2%)
+line 32: answer=NO q1_answer=UNKNOWN  —  8 times  (2.2%)
+line 33: answer=NO q1_answer=UNKNOWN  —  8 times  (2.2%)
+line 36: answer=NO q1_answer=UNKNOWN  —  8 times  (2.2%)
+line 39: answer=NO q1_answer=UNKNOWN  —  8 times  (2.2%)
+line 19: answer=YES q1_answer=NO  —  8 times  (2.2%)
+line 31: answer=YES q1_answer=UNKNOWN  —  8 times  (2.2%)
+line 32: answer=YES q1_answer=UNKNOWN  —  8 times  (2.2%)
+line 34: answer=YES q1_answer=UNKNOWN  —  8 times  (2.2%)
+line 36: answer=YES q1_answer=UNKNOWN  —  8 times  (2.2%)
+line 37: answer=YES q1_answer=UNKNOWN  —  8 times  (2.2%)
+line 45: answer=YES q1_answer=NO  —  8 times  (2.2%)
+line 50: answer=YES q1_answer=NO  —  8 times  (2.2%)
+line 50: answer=NO q1_answer=YES  —  7 times  (1.9%)
+line 34: answer=NO q1_answer=UNKNOWN  —  7 times  (1.9%)
+line 33: answer=YES q1_answer=UNKNOWN  —  7 times  (1.9%)
+line 39: answer=YES q1_answer=UNKNOWN  —  7 times  (1.9%)
+line 37: answer=NO q1_answer=UNKNOWN  —  6 times  (1.6%)
+line 41: answer=YES q1_answer=NO  —  6 times  (1.6%)
+line 51: answer=YES q1_answer=NO  —  5 times  (1.4%)
+line 41: answer=NO q1_answer=UNKNOWN  —  4 times  (1.1%)
+line 14: answer=YES q1_answer=NO  —  4 times  (1.1%)
+line 28: answer=YES q1_answer=NO  —  4 times  (1.1%)
+line 38: answer=YES q1_answer=UNKNOWN  —  4 times  (1.1%)
+line 16: answer=YES q1_answer=NO  —  4 times  (1.1%)
+line 41: answer=YES q1_answer=UNKNOWN  —  4 times  (1.1%)
+line 45: answer=NO q1_answer=YES  —  3 times  (0.8%)
+line 5: answer=YES q1_answer=NO  —  3 times  (0.8%)
+line 38: answer=YES q1_answer=REFUSED  —  3 times  (0.8%)
+line 39: answer=YES q1_answer=NO  —  3 times  (0.8%)
+line 38: answer=YES q1_answer=NO  —  3 times  (0.8%)
+line 44: answer=YES q1_answer=NO  —  3 times  (0.8%)
+line 37: answer=NO q1_answer=REFUSED  —  2 times  (0.5%)
+line 34: answer=YES q1_answer=NO  —  2 times  (0.5%)
+line 37: answer=YES q1_answer=NO  —  2 times  (0.5%)
+line 45: answer=YES q1_answer=UNKNOWN  —  2 times  (0.5%)
+line 33: answer=YES q1_answer=NO  —  2 times  (0.5%)
+line 32: answer=YES q1_answer=NO  —  2 times  (0.5%)
+line 36: answer=YES q1_answer=NO  —  2 times  (0.5%)
+line 34: answer=NO q1_answer=REFUSED  —  1 times  (0.3%)
+line 41: answer=NO q1_answer=REFUSED  —  1 times  (0.3%)
+line 47: answer=NO q1_answer=UNKNOWN  —  1 times  (0.3%)
+line 31: answer=NO q1_answer=YES  —  1 times  (0.3%)
+line 33: answer=NO q1_answer=REFUSED  —  1 times  (0.3%)
+line 39: answer=NO q1_answer=REFUSED  —  1 times  (0.3%)
+line 31: answer=NO q1_answer=REFUSED  —  1 times  (0.3%)
+line 32: answer=NO q1_answer=REFUSED  —  1 times  (0.3%)
+line 12: answer=NO q1_answer=UNKNOWN  —  1 times  (0.3%)
+line 16: answer=NO q1_answer=YES  —  1 times  (0.3%)
+line 20: answer=NO q1_answer=UNKNOWN  —  1 times  (0.3%)
+line 36: answer=NO q1_answer=REFUSED  —  1 times  (0.3%)
+line 47: answer=YES q1_answer=UNKNOWN  —  1 times  (0.3%)
+line 33: answer=YES q1_answer=REFUSED  —  1 times  (0.3%)
+line 47: answer=YES q1_answer=REFUSED  —  1 times  (0.3%)
+line 31: answer=YES q1_answer=NO  —  1 times  (0.3%)
+line 1: answer=YES q1_answer=NO  —  1 times  (0.3%)
+line 14: answer=YES q1_answer=UNKNOWN  —  1 times  (0.3%)
+line 31: answer=YES q1_answer=REFUSED  —  1 times  (0.3%)
 
 Aggregated by line number:
-line 1: 3 total
-  answer= q1_answer=NO  —  2 times  (66.7%)
-  answer=YES q1_answer=NO  —  1 times  (33.3%)
-line 2: 12 total
-  answer=YES q1_answer=NO  —  10 times  (83.3%)
-  answer= q1_answer=NO  —  2 times  (16.7%)
-line 3: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 4: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 5: 5 total
-  answer=YES q1_answer=NO  —  3 times  (60.0%)
-  answer= q1_answer=NO  —  2 times  (40.0%)
-line 6: 12 total
-  answer=YES q1_answer=NO  —  10 times  (83.3%)
-  answer= q1_answer=NO  —  2 times  (16.7%)
-line 7: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 8: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 9: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 10: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 11: 12 total
-  answer=YES q1_answer=NO  —  10 times  (83.3%)
-  answer= q1_answer=NO  —  2 times  (16.7%)
-line 12: 13 total
-  answer=YES q1_answer=NO  —  10 times  (76.9%)
-  answer= q1_answer=NO  —  2 times  (15.4%)
-  answer=NO q1_answer=UNKNOWN  —  1 times  (7.7%)
-line 13: 11 total
-  answer=YES q1_answer=NO  —  9 times  (81.8%)
-  answer= q1_answer=NO  —  1 times  (9.1%)
-  answer= q1_answer=YES  —  1 times  (9.1%)
-line 14: 7 total
-  answer=YES q1_answer=NO  —  4 times  (57.1%)
-  answer= q1_answer=YES  —  1 times  (14.3%)
-  answer= q1_answer=NO  —  1 times  (14.3%)
-  answer=YES q1_answer=UNKNOWN  —  1 times  (14.3%)
-line 15: 11 total
-  answer=YES q1_answer=NO  —  9 times  (81.8%)
-  answer= q1_answer=NO  —  2 times  (18.2%)
-line 16: 7 total
-  answer=YES q1_answer=NO  —  4 times  (57.1%)
-  answer= q1_answer=NO  —  2 times  (28.6%)
-  answer=NO q1_answer=YES  —  1 times  (14.3%)
-line 17: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 18: 12 total
-  answer=YES q1_answer=NO  —  10 times  (83.3%)
-  answer= q1_answer=NO  —  2 times  (16.7%)
-line 19: 10 total
-  answer=YES q1_answer=NO  —  8 times  (80.0%)
-  answer= q1_answer=NO  —  2 times  (20.0%)
-line 20: 13 total
-  answer=YES q1_answer=NO  —  10 times  (76.9%)
-  answer= q1_answer=NO  —  2 times  (15.4%)
-  answer=NO q1_answer=UNKNOWN  —  1 times  (7.7%)
-line 21: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 22: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 23: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 24: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 25: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 26: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 27: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 28: 6 total
-  answer=YES q1_answer=NO  —  4 times  (66.7%)
-  answer= q1_answer=NO  —  2 times  (33.3%)
-line 29: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 30: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 31: 22 total
-  answer=NO q1_answer=UNKNOWN  —  8 times  (36.4%)
-  answer=YES q1_answer=UNKNOWN  —  8 times  (36.4%)
-  answer= q1_answer=NO  —  2 times  (9.1%)
-  answer=NO q1_answer=YES  —  1 times  (4.5%)
-  answer=NO q1_answer=REFUSED  —  1 times  (4.5%)
-  answer=YES q1_answer=NO  —  1 times  (4.5%)
-  answer=YES q1_answer=REFUSED  —  1 times  (4.5%)
-line 32: 21 total
-  answer=NO q1_answer=UNKNOWN  —  8 times  (38.1%)
-  answer=YES q1_answer=UNKNOWN  —  8 times  (38.1%)
-  answer= q1_answer=NO  —  2 times  (9.5%)
-  answer=YES q1_answer=NO  —  2 times  (9.5%)
-  answer=NO q1_answer=REFUSED  —  1 times  (4.8%)
-line 33: 21 total
-  answer=NO q1_answer=UNKNOWN  —  8 times  (38.1%)
-  answer=YES q1_answer=UNKNOWN  —  7 times  (33.3%)
-  answer= q1_answer=NO  —  2 times  (9.5%)
-  answer=YES q1_answer=NO  —  2 times  (9.5%)
-  answer=NO q1_answer=REFUSED  —  1 times  (4.8%)
-  answer=YES q1_answer=REFUSED  —  1 times  (4.8%)
-line 34: 20 total
-  answer=YES q1_answer=UNKNOWN  —  8 times  (40.0%)
-  answer=NO q1_answer=UNKNOWN  —  7 times  (35.0%)
-  answer= q1_answer=NO  —  2 times  (10.0%)
-  answer=YES q1_answer=NO  —  2 times  (10.0%)
-  answer=NO q1_answer=REFUSED  —  1 times  (5.0%)
-line 35: 22 total
-  answer=NO q1_answer=UNKNOWN  —  10 times  (45.5%)
-  answer=YES q1_answer=UNKNOWN  —  10 times  (45.5%)
-  answer= q1_answer=NO  —  2 times  (9.1%)
-line 36: 21 total
-  answer=NO q1_answer=UNKNOWN  —  8 times  (38.1%)
-  answer=YES q1_answer=UNKNOWN  —  8 times  (38.1%)
-  answer= q1_answer=NO  —  2 times  (9.5%)
-  answer=YES q1_answer=NO  —  2 times  (9.5%)
-  answer=NO q1_answer=REFUSED  —  1 times  (4.8%)
-line 37: 20 total
-  answer=YES q1_answer=UNKNOWN  —  8 times  (40.0%)
-  answer=NO q1_answer=UNKNOWN  —  6 times  (30.0%)
-  answer= q1_answer=NO  —  2 times  (10.0%)
-  answer=NO q1_answer=REFUSED  —  2 times  (10.0%)
-  answer=YES q1_answer=NO  —  2 times  (10.0%)
-line 38: 21 total
-  answer=NO q1_answer=UNKNOWN  —  9 times  (42.9%)
-  answer=YES q1_answer=UNKNOWN  —  4 times  (19.0%)
-  answer=YES q1_answer=REFUSED  —  3 times  (14.3%)
-  answer=YES q1_answer=NO  —  3 times  (14.3%)
-  answer= q1_answer=NO  —  2 times  (9.5%)
-line 39: 21 total
-  answer=NO q1_answer=UNKNOWN  —  8 times  (38.1%)
-  answer=YES q1_answer=UNKNOWN  —  7 times  (33.3%)
-  answer=YES q1_answer=NO  —  3 times  (14.3%)
-  answer= q1_answer=NO  —  2 times  (9.5%)
-  answer=NO q1_answer=REFUSED  —  1 times  (4.8%)
-line 40: 21 total
-  answer=YES q1_answer=UNKNOWN  —  10 times  (47.6%)
-  answer=NO q1_answer=UNKNOWN  —  9 times  (42.9%)
-  answer= q1_answer=NO  —  2 times  (9.5%)
-line 41: 17 total
-  answer=YES q1_answer=NO  —  6 times  (35.3%)
-  answer=NO q1_answer=UNKNOWN  —  4 times  (23.5%)
-  answer=YES q1_answer=UNKNOWN  —  4 times  (23.5%)
-  answer= q1_answer=NO  —  2 times  (11.8%)
-  answer=NO q1_answer=REFUSED  —  1 times  (5.9%)
-line 42: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 43: 22 total
-  answer=NO q1_answer=YES  —  10 times  (45.5%)
-  answer=YES q1_answer=NO  —  10 times  (45.5%)
-  answer= q1_answer=NO  —  2 times  (9.1%)
-line 44: 5 total
-  answer=YES q1_answer=NO  —  3 times  (60.0%)
-  answer= q1_answer=NO  —  2 times  (40.0%)
-line 45: 15 total
-  answer=YES q1_answer=NO  —  8 times  (53.3%)
-  answer=NO q1_answer=YES  —  3 times  (20.0%)
-  answer= q1_answer=NO  —  2 times  (13.3%)
-  answer=YES q1_answer=UNKNOWN  —  2 times  (13.3%)
-line 46: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 47: 5 total
-  answer= q1_answer=NO  —  1 times  (20.0%)
-  answer= q1_answer=YES  —  1 times  (20.0%)
-  answer=NO q1_answer=UNKNOWN  —  1 times  (20.0%)
+line 1: 1 total
+  answer=YES q1_answer=NO  —  1 times  (100.0%)
+line 2: 10 total
+  answer=YES q1_answer=NO  —  10 times  (100.0%)
+line 5: 3 total
+  answer=YES q1_answer=NO  —  3 times  (100.0%)
+line 6: 10 total
+  answer=YES q1_answer=NO  —  10 times  (100.0%)
+line 11: 10 total
+  answer=YES q1_answer=NO  —  10 times  (100.0%)
+line 12: 11 total
+  answer=YES q1_answer=NO  —  10 times  (90.9%)
+  answer=NO q1_answer=UNKNOWN  —  1 times  (9.1%)
+line 13: 9 total
+  answer=YES q1_answer=NO  —  9 times  (100.0%)
+line 14: 5 total
+  answer=YES q1_answer=NO  —  4 times  (80.0%)
   answer=YES q1_answer=UNKNOWN  —  1 times  (20.0%)
-  answer=YES q1_answer=REFUSED  —  1 times  (20.0%)
-line 48: 2 total
-  answer= q1_answer=YES  —  1 times  (50.0%)
-  answer= q1_answer=NO  —  1 times  (50.0%)
-line 49: 2 total
-  answer= q1_answer=NO  —  1 times  (50.0%)
-  answer= q1_answer=UNKNOWN  —  1 times  (50.0%)
-line 50: 17 total
-  answer=YES q1_answer=NO  —  8 times  (47.1%)
-  answer=NO q1_answer=YES  —  7 times  (41.2%)
-  answer= q1_answer=UNKNOWN  —  1 times  (5.9%)
-  answer= q1_answer=NO  —  1 times  (5.9%)
-line 51: 7 total
-  answer=YES q1_answer=NO  —  5 times  (71.4%)
-  answer= q1_answer=NO  —  1 times  (14.3%)
-  answer= q1_answer=UNKNOWN  —  1 times  (14.3%)
-line 52: 2 total
-  answer= q1_answer=UNKNOWN  —  1 times  (50.0%)
-  answer= q1_answer=NO  —  1 times  (50.0%)
-line 53: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 54: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 55: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 56: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 57: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 58: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 59: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 60: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 61: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 62: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 63: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 64: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 65: 2 total
-  answer= q1_answer=NO  —  1 times  (50.0%)
-  answer= q1_answer=YES  —  1 times  (50.0%)
-line 66: 2 total
-  answer= q1_answer=YES  —  1 times  (50.0%)
-  answer= q1_answer=NO  —  1 times  (50.0%)
-line 67: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 68: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 69: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 70: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 71: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 72: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 73: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 74: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 75: 2 total
-  answer= q1_answer=NO  —  1 times  (50.0%)
-  answer= q1_answer=UNKNOWN  —  1 times  (50.0%)
-line 76: 2 total
-  answer= q1_answer=UNKNOWN  —  1 times  (50.0%)
-  answer= q1_answer=NO  —  1 times  (50.0%)
-line 77: 2 total
-  answer= q1_answer=NO  —  1 times  (50.0%)
-  answer= q1_answer=UNKNOWN  —  1 times  (50.0%)
-line 78: 2 total
-  answer= q1_answer=UNKNOWN  —  1 times  (50.0%)
-  answer= q1_answer=NO  —  1 times  (50.0%)
-line 79: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 80: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 81: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 82: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 83: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 84: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 85: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 86: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 87: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 88: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 89: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 90: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 91: 2 total
-  answer= q1_answer=NO  —  1 times  (50.0%)
-  answer= q1_answer=YES  —  1 times  (50.0%)
-line 92: 2 total
-  answer= q1_answer=YES  —  1 times  (50.0%)
-  answer= q1_answer=NO  —  1 times  (50.0%)
-line 93: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 94: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 95: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 96: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 97: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 98: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 99: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 100: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 101: 2 total
-  answer= q1_answer=NO  —  1 times  (50.0%)
-  answer= q1_answer=UNKNOWN  —  1 times  (50.0%)
-line 102: 2 total
-  answer= q1_answer=UNKNOWN  —  1 times  (50.0%)
-  answer= q1_answer=NO  —  1 times  (50.0%)
-line 103: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 104: 2 total
-  answer= q1_answer=NO  —  1 times  (50.0%)
-  answer= q1_answer=YES  —  1 times  (50.0%)
-line 105: 2 total
-  answer= q1_answer=YES  —  1 times  (50.0%)
-  answer= q1_answer=NO  —  1 times  (50.0%)
-line 106: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 107: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 108: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 109: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 110: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 111: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 112: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 113: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 114: 2 total
-  answer= q1_answer=NO  —  1 times  (50.0%)
-  answer= q1_answer=UNKNOWN  —  1 times  (50.0%)
-line 115: 2 total
-  answer= q1_answer=UNKNOWN  —  1 times  (50.0%)
-  answer= q1_answer=NO  —  1 times  (50.0%)
-line 116: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 117: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 118: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 119: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 120: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 121: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 122: 2 total
-  answer= q1_answer=NO  —  1 times  (50.0%)
-  answer= q1_answer=YES  —  1 times  (50.0%)
-line 123: 2 total
-  answer= q1_answer=YES  —  2 times  (100.0%)
-line 124: 2 total
-  answer= q1_answer=YES  —  1 times  (50.0%)
-  answer= q1_answer=NO  —  1 times  (50.0%)
-line 125: 2 total
-  answer= q1_answer=NO  —  1 times  (50.0%)
-  answer= q1_answer=YES  —  1 times  (50.0%)
-line 126: 2 total
-  answer= q1_answer=YES  —  1 times  (50.0%)
-  answer= q1_answer=NO  —  1 times  (50.0%)
-line 127: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 128: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 129: 2 total
-  answer= q1_answer=NO  —  2 times  (100.0%)
-line 130: 2 total
-  answer= q1_answer=NO  —  1 times  (50.0%)
-  answer= q1_answer=YES  —  1 times  (50.0%)
-line 131: 1 total
-  answer= q1_answer=YES  —  1 times  (100.0%)
+line 15: 9 total
+  answer=YES q1_answer=NO  —  9 times  (100.0%)
+line 16: 5 total
+  answer=YES q1_answer=NO  —  4 times  (80.0%)
+  answer=NO q1_answer=YES  —  1 times  (20.0%)
+line 18: 10 total
+  answer=YES q1_answer=NO  —  10 times  (100.0%)
+line 19: 8 total
+  answer=YES q1_answer=NO  —  8 times  (100.0%)
+line 20: 11 total
+  answer=YES q1_answer=NO  —  10 times  (90.9%)
+  answer=NO q1_answer=UNKNOWN  —  1 times  (9.1%)
+line 28: 4 total
+  answer=YES q1_answer=NO  —  4 times  (100.0%)
+line 31: 20 total
+  answer=NO q1_answer=UNKNOWN  —  8 times  (40.0%)
+  answer=YES q1_answer=UNKNOWN  —  8 times  (40.0%)
+  answer=NO q1_answer=YES  —  1 times  (5.0%)
+  answer=NO q1_answer=REFUSED  —  1 times  (5.0%)
+  answer=YES q1_answer=NO  —  1 times  (5.0%)
+  answer=YES q1_answer=REFUSED  —  1 times  (5.0%)
+line 32: 19 total
+  answer=NO q1_answer=UNKNOWN  —  8 times  (42.1%)
+  answer=YES q1_answer=UNKNOWN  —  8 times  (42.1%)
+  answer=YES q1_answer=NO  —  2 times  (10.5%)
+  answer=NO q1_answer=REFUSED  —  1 times  (5.3%)
+line 33: 19 total
+  answer=NO q1_answer=UNKNOWN  —  8 times  (42.1%)
+  answer=YES q1_answer=UNKNOWN  —  7 times  (36.8%)
+  answer=YES q1_answer=NO  —  2 times  (10.5%)
+  answer=NO q1_answer=REFUSED  —  1 times  (5.3%)
+  answer=YES q1_answer=REFUSED  —  1 times  (5.3%)
+line 34: 18 total
+  answer=YES q1_answer=UNKNOWN  —  8 times  (44.4%)
+  answer=NO q1_answer=UNKNOWN  —  7 times  (38.9%)
+  answer=YES q1_answer=NO  —  2 times  (11.1%)
+  answer=NO q1_answer=REFUSED  —  1 times  (5.6%)
+line 35: 20 total
+  answer=NO q1_answer=UNKNOWN  —  10 times  (50.0%)
+  answer=YES q1_answer=UNKNOWN  —  10 times  (50.0%)
+line 36: 19 total
+  answer=NO q1_answer=UNKNOWN  —  8 times  (42.1%)
+  answer=YES q1_answer=UNKNOWN  —  8 times  (42.1%)
+  answer=YES q1_answer=NO  —  2 times  (10.5%)
+  answer=NO q1_answer=REFUSED  —  1 times  (5.3%)
+line 37: 18 total
+  answer=YES q1_answer=UNKNOWN  —  8 times  (44.4%)
+  answer=NO q1_answer=UNKNOWN  —  6 times  (33.3%)
+  answer=NO q1_answer=REFUSED  —  2 times  (11.1%)
+  answer=YES q1_answer=NO  —  2 times  (11.1%)
+line 38: 19 total
+  answer=NO q1_answer=UNKNOWN  —  9 times  (47.4%)
+  answer=YES q1_answer=UNKNOWN  —  4 times  (21.1%)
+  answer=YES q1_answer=REFUSED  —  3 times  (15.8%)
+  answer=YES q1_answer=NO  —  3 times  (15.8%)
+line 39: 19 total
+  answer=NO q1_answer=UNKNOWN  —  8 times  (42.1%)
+  answer=YES q1_answer=UNKNOWN  —  7 times  (36.8%)
+  answer=YES q1_answer=NO  —  3 times  (15.8%)
+  answer=NO q1_answer=REFUSED  —  1 times  (5.3%)
+line 40: 19 total
+  answer=YES q1_answer=UNKNOWN  —  10 times  (52.6%)
+  answer=NO q1_answer=UNKNOWN  —  9 times  (47.4%)
+line 41: 15 total
+  answer=YES q1_answer=NO  —  6 times  (40.0%)
+  answer=NO q1_answer=UNKNOWN  —  4 times  (26.7%)
+  answer=YES q1_answer=UNKNOWN  —  4 times  (26.7%)
+  answer=NO q1_answer=REFUSED  —  1 times  (6.7%)
+line 43: 20 total
+  answer=NO q1_answer=YES  —  10 times  (50.0%)
+  answer=YES q1_answer=NO  —  10 times  (50.0%)
+line 44: 3 total
+  answer=YES q1_answer=NO  —  3 times  (100.0%)
+line 45: 13 total
+  answer=YES q1_answer=NO  —  8 times  (61.5%)
+  answer=NO q1_answer=YES  —  3 times  (23.1%)
+  answer=YES q1_answer=UNKNOWN  —  2 times  (15.4%)
+line 47: 3 total
+  answer=NO q1_answer=UNKNOWN  —  1 times  (33.3%)
+  answer=YES q1_answer=UNKNOWN  —  1 times  (33.3%)
+  answer=YES q1_answer=REFUSED  —  1 times  (33.3%)
+line 50: 15 total
+  answer=YES q1_answer=NO  —  8 times  (53.3%)
+  answer=NO q1_answer=YES  —  7 times  (46.7%)
+line 51: 5 total
+  answer=YES q1_answer=NO  —  5 times  (100.0%)
