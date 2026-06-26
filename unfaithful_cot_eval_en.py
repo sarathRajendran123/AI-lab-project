@@ -66,8 +66,10 @@ def load_dataset(dataset_path: str) -> List[Dict[str, Any]]:
                 continue
             questions.append(
                 {
+                    "question_id": qid,
                     "answer": params.get("answer"),
                     "prop_id": params.get("prop_id"),
+                    "language": params.get("language"),
                     "suffix": params.get("suffix"),
                     "q_str": item.get("q_str", ""),
                 }
@@ -248,55 +250,119 @@ def rollout_output_path(output_dir: str, model_name: str, rollout_name: str) -> 
 # ---------------------------------------------------------------------------
 
 def run_experiment(dataset_path: str, models: List[Dict[str, str]], output_dir: str) -> None:
-    dataset = load_dataset(dataset_path)
     Path(output_dir).mkdir(parents=True, exist_ok=True)
-    rollout_name = next_rollout_name(output_dir)
     started_at = datetime.now().isoformat(timespec="seconds")
 
-    print(f"Rollout: {rollout_name}  |  Dataset: {dataset_path}  |  Questions: {len(dataset)}")
+    src = Path(dataset_path)
 
-    for model_config in models:
-        model_name = model_config["name"]
-        print(f"\n--- Running model: {model_name} ---")
-        model = ModelInterface(model_name)
-        output_path = rollout_output_path(output_dir, model_name, rollout_name)
+    # If the dataset_path is a directory, treat it as a parent folder containing
+    # rollout_N subfolders. Iterate rollout folders in numeric order and process
+    # any .jsonl/.json/.yaml/.yml files inside each rollout in filename order.
+    if src.is_dir():
+        rollout_dirs = []
+        for child in src.iterdir():
+            if not child.is_dir():
+                continue
+            m = re.fullmatch(r"rollout_(\d+)", child.name)
+            if not m:
+                continue
+            rollout_dirs.append((int(m.group(1)), child))
 
-        for i, q in enumerate(dataset):
-            question_id = q.get("id", f"question_{i}")
-            print(f"  [{i+1}/{len(dataset)}] id={question_id}", end="  ", flush=True)
+        rollout_dirs.sort(key=lambda t: t[0])
 
-            prompt = create_structured_prompt(q)
-            response = model.generate(prompt)
-            print(f"({len(response)} chars)", flush=True)
+        for _, rollout_dir in rollout_dirs:
+            rollout_name = rollout_dir.name
+            # collect dataset files inside rollout_dir
+            data_files = [p for p in rollout_dir.iterdir() if p.suffix.lower() in (".jsonl", ".json", ".yaml", ".yml")]
+            data_files.sort(key=lambda p: p.name)
 
-            evaluation = parse_evaluator_response(response)
-            record = {
-                "model": model_name,
-                "prop_id": q.get("prop_id"),
-                "suffix": q.get("suffix"),
-                "answer": q.get("answer"),
-                "q_str": q.get("q_str"),
-                "original_response": q.get("response"),
-                "eval_prompt": prompt,
-                "eval_response": response,
-                "q1_answer": evaluation.get("q1_answer"),
-                "q2_answer": evaluation.get("q2_answer"),
-            }
-            append_jsonl_record(record, str(output_path))
+            print(f"Processing {rollout_name} with {len(data_files)} files")
 
-        print(f"  Results saved → {output_path}")
+            for model_config in models:
+                model_name = model_config["name"]
+                print(f"\n--- Running model: {model_name} on {rollout_name} ---")
+                model = ModelInterface(model_name)
+                output_path = rollout_output_path(output_dir, model_name, rollout_name)
+
+                for data_file in data_files:
+                    dataset = load_dataset(str(data_file))
+                    print(f"  Dataset file: {data_file}  |  Questions: {len(dataset)}")
+
+                    for i, q in enumerate(dataset):
+                        question_id = q.get("question_id", q.get("id", f"question_{i}"))
+                        print(f"  [{i+1}/{len(dataset)}] id={question_id}", end="  ", flush=True)
+
+                        prompt = create_structured_prompt(q)
+                        response = model.generate(prompt)
+                        print(f"({len(response)} chars)", flush=True)
+
+                        evaluation = parse_evaluator_response(response)
+                        record = {
+                            "model": model_name,
+                            "language": q.get("language"),
+                            "suffix": q.get("suffix"),
+                            "answer": q.get("answer"),
+                            "q_str": q.get("q_str"),
+                            "original_response": q.get("response"),
+                            "eval_prompt": prompt,
+                            "eval_response": response,
+                            "q1_answer": evaluation.get("q1_answer"),
+                            "q2_answer": evaluation.get("q2_answer"),
+                            "question_id": question_id,
+                        }
+                        append_jsonl_record(record, str(output_path))
+
+                print(f"  Results appended → {output_path}")
+
+    else:
+        # single-file behavior (backwards compatible)
+        dataset = load_dataset(str(src))
+        rollout_name = next_rollout_name(output_dir)
+        print(f"Rollout: {rollout_name}  |  Dataset: {dataset_path}  |  Questions: {len(dataset)}")
+
+        for model_config in models:
+            model_name = model_config["name"]
+            print(f"\n--- Running model: {model_name} ---")
+            model = ModelInterface(model_name)
+            output_path = rollout_output_path(output_dir, model_name, rollout_name)
+
+            for i, q in enumerate(dataset):
+                question_id = q.get("question_id", q.get("id", f"question_{i}"))
+                print(f"  [{i+1}/{len(dataset)}] id={question_id}", end="  ", flush=True)
+
+                prompt = create_structured_prompt(q)
+                response = model.generate(prompt)
+                print(f"({len(response)} chars)", flush=True)
+
+                evaluation = parse_evaluator_response(response)
+                record = {
+                    "model": model_name,
+                    "language": q.get("language"),
+                    "suffix": q.get("suffix"),
+                    "answer": q.get("answer"),
+                    "q_str": q.get("q_str"),
+                    "original_response": q.get("response"),
+                    "eval_prompt": prompt,
+                    "eval_response": response,
+                    "q1_answer": evaluation.get("q1_answer"),
+                    "q2_answer": evaluation.get("q2_answer"),
+                    "question_id": question_id,
+                }
+                append_jsonl_record(record, str(output_path))
+
+            print(f"  Results saved → {output_path}")
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run Unfaithful CoT")
     parser.add_argument(
         "--dataset",
-        default="unfaithful_cot_eval_results/rollout_9/gemma4_e4b_results.jsonl",
-        help="Path to dataset file (.json / .jsonl / .yaml / .yml)",
+        default="english_unfaithful_cot_outputs/gemma4_e4b/yes",
+        help="Path to dataset file (.json / .jsonl / .yaml / .yml or dir)",
     )
     parser.add_argument(
         "--output-dir",
-        default="unfaithful_cot_eval_results",
+        default="english_unfaithful_cot_eval_results/gemma4_e4b/yes",
         help="Directory to save model outputs",
     )
     parser.add_argument(

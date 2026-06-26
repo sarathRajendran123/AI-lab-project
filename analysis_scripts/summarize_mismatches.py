@@ -5,7 +5,10 @@ import re
 from typing import Dict
 
 
-LINE_RE = re.compile(r"^\s*line\s+(\d+)\s*:\s*(.+)$", flags=re.IGNORECASE)
+LINE_RE = re.compile(
+    r"^\s*(?:file\s+.+?\s+)?line\s+(\d+)\s*:\s*(.+)$",
+    flags=re.IGNORECASE,
+)
 
 
 def parse_file(path: Path):
@@ -27,8 +30,9 @@ def parse_file(path: Path):
                 by_line[line_no][rest] += 1
                 total += 1
             else:
-                # fallback: count the whole line
-                full_counter[s] += 1
+                # fallback: count the whole line, but strip a leading file path if present
+                normalized = re.sub(r"^\s*file\s+.+?\s+line\s+", "line ", s, flags=re.IGNORECASE)
+                full_counter[normalized] += 1
                 total += 1
 
     return total, full_counter, by_line

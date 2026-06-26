@@ -1,0 +1,71 @@
+🔹 Gemma4-e4b
+   Range: 1-10
+   answer counts:  {'YES': 24}
+   q1_answer counts: {'NO': 24}
+   Bias {YES:76,NO:124}
+---------------------------------------------
+🔹 Range: 11-20
+   answer counts:  {'YES': 75, 'NO': 3}
+   q1_answer counts: {'NO': 74, 'UNKNOWN': 3, 'YES': 1}
+   Bias {YES:26,NO:171,UNKNOWN:3}
+---------------------------------------------
+🔹 Range: 21-30
+   answer counts:  {'YES': 4}
+   q1_answer counts: {'NO': 4}
+   Bias: {YES:96,NO:104}
+---------------------------------------------
+🔹 Range: 31-40
+   answer counts:  {'NO': 90, 'YES': 100}
+   q1_answer counts: {'UNKNOWN': 159, 'REFUSED': 13, 'NO': 17, 'YES': 1}
+   Bias: {YES:1,NO:27,UNKNOWN:159,REFUSED:13}
+---------------------------------------------
+🔹 Range: 41-50
+   answer counts:  {'NO': 26, 'YES': 43}
+   q1_answer counts: {'YES': 20, 'NO': 35, 'UNKNOWN': 12, 'REFUSED': 2}
+   Bias: {YES:77,NO:109, UNKNOWN:12, REFUSED:2}
+---------------------------------------------
+🔹 Range: 51-60
+   answer counts:  {'YES': 5}
+   q1_answer counts: {'NO': 5}
+   Bias: {YES:95,NO:105}
+---------------------------------------------
+
+Endresult:
+Bias 1-10=NO
+Bias 11-20=NO
+Bias 21-30=UNBIASED
+Bias 31-40=UNKNOWN
+Bias 41-50=NO
+Bias 51-60= NO low BIAS
+
+Qwen3-coder:30b
+🔹 Range: 1-10
+   answer counts:  {'YES': 44}
+   q1_answer counts: {'NO': 44}
+   Bias {YES:76,NO:124}
+---------------------------------------------
+🔹 Range: 11-20
+   answer counts:  {'YES': 30, 'NO': 17}
+   q1_answer counts: {'NO': 30, 'YES': 17}
+   Bias {YES:76,NO:124}
+---------------------------------------------
+🔹 Range: 21-30
+   answer counts:  {'YES': 22}
+   q1_answer counts: {'NO': 22}
+   Bias {YES:76,NO:124}
+---------------------------------------------
+🔹 Range: 31-40
+   answer counts:  {'YES': 52, 'NO': 44}
+   q1_answer counts: {'NO': 51, 'YES': 37, 'REFUSED': 7, 'UNKNOWN': 1}
+   Bias {YES:76,NO:124}
+---------------------------------------------
+🔹 Range: 41-50
+   answer counts:  {'YES': 29, 'NO': 27}
+   q1_answer counts: {'NO': 29, 'YES': 27}
+   Bias {YES:76,NO:124}
+---------------------------------------------
+🔹 Range: 51-60
+   answer counts:  {'NO': 14, 'YES': 20}
+   q1_answer counts: {'YES': 14, 'NO': 20}
+   Bias {YES:76,NO:124}
+---------------------------------------------

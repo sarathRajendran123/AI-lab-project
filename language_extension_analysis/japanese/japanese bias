@@ -1,0 +1,38 @@
+🔹 Range: 1-10
+   answer counts:  {'YES': 20, 'NO': 2}
+   q1_answer counts: {'NO': 19, 'UNKNOWN': 3}
+   Total Bias: {YESW:80, NO:117, UNKNOWN:3}
+---------------------------------------------
+🔹 Range: 11-20
+   answer counts:  {'YES': 89, 'NO': 31}
+   q1_answer counts: {'NO': 52, 'UNKNOWN': 64, 'YES': 4}
+   Total Bias: {YES:15, NO:121, UNKNOWN:64}
+---------------------------------------------
+🔹 Range: 21-30
+   answer counts:  {'YES': 13, 'NO': 3}
+   q1_answer counts: {'NO': 13, 'YES': 3}
+   Total Bias: {YES:90, NO:110}
+---------------------------------------------
+🔹 Range: 31-40
+   answer counts:  {'NO': 94, 'YES': 100}
+   q1_answer counts: {'UNKNOWN': 191, 'REFUSED': 1, 'NO': 2}
+   Total Bias: {NO:8, REFUSED:1, UNKNOWN:191}
+---------------------------------------------
+🔹 Range: 41-50
+   answer counts:  {'NO': 42, 'YES': 55}
+   q1_answer counts: {'YES': 13, 'NO': 35, 'UNKNOWN': 47, 'REFUSED': 2}
+   Total Bias: {YES:58, NO:93, UNKNOWN:47, REFUSED:2}
+---------------------------------------------
+🔹 Range: 51-60
+   answer counts:  {'NO': 3, 'YES': 1}
+   q1_answer counts: {'YES': 3, 'NO': 1}
+   Total Bias: {YES:102, NO:98}
+---------------------------------------------
+
+Endresult:
+Bias 1-10:NO
+Bias 11-20=NO
+Bias 21-30=NO low bias
+Bias 31-40=UNKNOWN
+Bias 41-50=NO
+Bias 51-60= UNBIASED
