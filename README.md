@@ -16,7 +16,7 @@ Lastly, evaluate_results.py as the second autorater, to actually evaluate the cr
 
 # Post Ad Hoc Rationalization:
 
-Similarly to the above, in the post_ad_hoc_rationalization folder are multiple script files, the results as well as the dataset used.
+Similarly to the above, in the post_hoc_rationalization folder are multiple script files, the results as well as the dataset used.
 
 In this case we only run unfaithful_cot.py to get initial results, with unfaithful_cot_eval.py being the autorater to evaluate the results.
 
